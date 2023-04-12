@@ -405,8 +405,8 @@
                                                 <td class="text-right text-uppercase"><strong class="data-carrency" data-selected-currency="UGX" data-base="UGX" data-amount="1400">KES 1,400</strong></td>
                                                 <td>
                                                     <!-- Button trigger modal -->
-                                                    <button type="button" class="btn btn-primary btn-sm btn-rounded waves-effect waves-light" data-bs-toggle="modal" data-bs-target=".transaction-detailModal">
-                                                        View Details
+                                                    <button type="button" data-bs-toggle="modal" data-bs-target=".transaction-detailModal" class="btn btn-primary waves-effect waves-light btn-sm">
+                                                        <i class="mdi mdi-eye-outline font-size-16 align-middle me-2"></i> More Details
                                                     </button>
                                                 </td>
                                             </tr>
@@ -449,8 +449,8 @@
                                                 <td class="text-right text-uppercase"><strong class="data-carrency" data-selected-currency="UGX" data-base="UGX" data-amount="3000">KES 3,000</strong></td>
                                                 <td>
                                                     <!-- Button trigger modal -->
-                                                    <button type="button" class="btn btn-primary btn-sm btn-rounded waves-effect waves-light" data-bs-toggle="modal" data-bs-target=".transaction-detailModal">
-                                                        View Details
+                                                    <button type="button" data-bs-toggle="modal" data-bs-target=".transaction-detailModal" class="btn btn-primary waves-effect waves-light btn-sm">
+                                                        <i class="mdi mdi-eye-outline font-size-16 align-middle me-2"></i> More Details
                                                     </button>
                                                 </td>
                                             </tr>
@@ -493,8 +493,8 @@
                                                 <td class="text-right text-uppercase"><strong class="data-carrency" data-selected-currency="UGX" data-base="UGX" data-amount="2200">KES 2,200</strong></td>
                                                 <td>
                                                     <!-- Button trigger modal -->
-                                                    <button type="button" class="btn btn-primary btn-sm btn-rounded waves-effect waves-light" data-bs-toggle="modal" data-bs-target=".transaction-detailModal">
-                                                        View Details
+                                                    <button type="button" data-bs-toggle="modal" data-bs-target=".transaction-detailModal" class="btn btn-primary waves-effect waves-light btn-sm">
+                                                        <i class="mdi mdi-eye-outline font-size-16 align-middle me-2"></i> More Details
                                                     </button>
                                                 </td>
                                             </tr>
@@ -537,13 +537,10 @@
                                                 <td class="text-right text-uppercase"><strong class="data-carrency" data-selected-currency="UGX" data-base="UGX" data-amount="2000">kes 2,000</strong></td>
                                                 <td>
                                                     <!-- Button trigger modal -->
-                                                    <button type="button" class="btn btn-primary btn-sm btn-rounded waves-effect waves-light" data-bs-toggle="modal" data-bs-target=".transaction-detailModal">
-                                                        View Details
+                                                    <button type="button" data-bs-toggle="modal" data-bs-target=".transaction-detailModal" class="btn btn-primary waves-effect waves-light btn-sm">
+                                                        <i class="mdi mdi-eye-outline font-size-16 align-middle me-2"></i> More Details
                                                     </button>
 
-                                                    <button type="button" data-bs-toggle="modal" data-bs-target=".transaction-detailModal" class="btn btn-primary waves-effect waves-light btn-sm">
-                                                        <i class="bx bx-smile font-size-16 align-middle me-2"></i> More Details
-                                                    </button>
                                                 </td>
                                             </tr>
                                         </tbody>
@@ -565,14 +562,40 @@
                 <div class="modal-dialog modal-dialog-centered" role="document">
                     <div class="modal-content">
                         <div class="modal-header">
-                            <h5 class="modal-title" id="transaction-detailModalLabel">Transactions Details</h5>
+                            <h5 class="modal-title" id="transaction-detailModalLabel">Customer Details</h5>
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
                         <div class="modal-body">
 
 
-                            <div class="table-responsive mt-4">
-                                <table class="table align-middle table-nowrap">
+                            <div class="mt-4">
+                                <div class="d-flex mb-3">
+                                    <div class="flex-shrink-0 me-4">
+                                        <i class="mdi mdi-account-circle text-primary h1"></i>
+                                    </div>
+
+                                    <div class="flex-grow-1">
+                                        <div class="text-muted">
+                                            <h5>Henry Wells <small class="fw-medium">Member Since 24 Dec 2022 10:45 AM</small></h5>
+                                            <p class="mb-1">0712 345 678</p>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div class="card-body p-0">
+                                    <div class="d-flex align-items-center">
+                                        <div class="mb-2 me-2">
+                                            <i class="mdi mdi-map-marker-outline h2 text-success"></i>
+                                        </div>
+                                        <h5 class="mb-2">Location Details</h5>
+                                    </div>
+                                    <p class="text-muted mb-0">Nchiru Police Station, Kianjai</p>
+                                    <span class="badge badge-pill badge-soft-success font-size-11">Meru County</span>
+
+                                </div>
+
+                                <table class="table align-middle table-nowrap d-none">
                                     <tbody>
                                         <tr>
                                             <td style="width: 30%">
