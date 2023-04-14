@@ -323,12 +323,12 @@
                     <div class="row">
                         <div class="col-12">
                             <div class="page-title-box d-sm-flex align-items-center justify-content-between">
-                                <h4 class="mb-sm-0 font-size-18">Agents register</h4>
+                                <h4 class="mb-sm-0 font-size-18">Distributors register</h4>
 
                                 <div class="page-title-right">
                                     <ol class="breadcrumb m-0">
                                         <li class="breadcrumb-item"><a href="index.html">Dashboards</a></li>
-                                        <li class="breadcrumb-item active">Agents</li>
+                                        <li class="breadcrumb-item active">Distributors</li>
                                     </ol>
                                 </div>
 
@@ -343,26 +343,30 @@
                         <div class="col-12">
                             <div class="card">
                                 <div class="card-body">
-                                    <table id="datatable-buttons" class="table  dt-responsive nowrap w-100 table-striped">
+                                    <div class="table-responsive">
+                                        <table id="datatable-buttons" class="table   nowrap w-100 table-striped">
                                         <thead class="table-dark">
                                             <tr>
-                                                <th>Agent</th>
+                                                <th>Distributor</th>
                                                 <th>Phone</th>
                                                 <th>Added by</th>
-                                                <th>Date</th>
+                                                <th>Date Added</th>
+                                                <th>Location</th>
                                                 <th>Single Burner (Sales)</th>
                                                 <th>Double Burner (Sales)</th>
-                                                <th>Clients</th>
+                                                <th>Clients Served</th>
+                                                <th>Ethanol Supplies</th>
                                                 <th class="text-right">Wallet Bal</th>
                                                 <th>Actions</th>
                                             </tr>
                                         </thead>
                                         <tfoot class="table-dark">
                                            <tr>
-                                            <th colspan="4">22 Agents</th>
+                                            <th colspan="5">22 Distributors</th>
                                             <th>54</th>
                                             <th>60</th>
                                             <th>32</th>
+                                            <th>4,500 Li</th>
                                             <th colspan="" class="text-right">KES 67,900</th>
                                             <th></th>
                                            </tr>
@@ -373,16 +377,8 @@
                                             <tr>
                                                 <td class="">
                                                     <div class="d-flex align-items-center">
-                                                        <div class="flex-shrink-0 me-3">
-                                                            <div class="avatar-xs">
-                                                                <span class="avatar-title rounded-circle bg-primary bg-soft text-primary">
-                                                                        <strong>NS</strong>
-                                                                    </span>
-                                                            </div>
-                                                        </div>
-
                                                         <div class="flex-grow-1">
-                                                            <h5 class="font-size-14 mb-0">Stecia Mayanja</h5>
+                                                            <h5 class="font-size-14 mb-0">Corner Stone Shop</h5>
                                                         </div>
                                                     </div>
 
@@ -398,34 +394,35 @@
                                                 </td>
                                                 <td>Nov 4 2022 10:56 AM</td>
                                                 <td>
+                                                   <p class="mb-1 pb-0"> Homa Bay - Rongo Road</p>
+                                                   <span class="badge badge-pill badge-soft-success font-size-11">Homa Bay</span>
+                                                </td>
+                                                <td>
                                                     45
                                                 </td>
                                                 <td>
                                                     56
                                                 </td>
                                                 <th>32</th>
+                                                <th>4,500 Li</th>
                                                 <td class="text-right text-uppercase"><strong class="data-carrency" data-selected-currency="UGX" data-base="UGX" data-amount="1400">KES 1,400</strong></td>
                                                 <td>
                                                     <!-- Button trigger modal -->
                                                     <button type="button" data-bs-toggle="modal" data-bs-target=".transaction-detailModal" class="btn btn-primary waves-effect waves-light btn-sm">
-                                                        <i class="mdi mdi-eye-outline font-size-16 align-middle me-2"></i> More Details
+                                                        <i class="bx bx-show font-size-16 align-middle me-2"></i> More Details
                                                     </button>
+
+                                                    <a href="distributor-statements.html" class="btn btn btn-success waves-effect waves-light btn-sm"><i class="bx bx-file font-size-16 align-middle me-2"></i>Statements</a>
                                                 </td>
                                             </tr>
 
                                             <tr>
                                                 <td class="">
                                                     <div class="d-flex align-items-center">
-                                                        <div class="flex-shrink-0 me-3">
-                                                            <div class="avatar-xs">
-                                                                <span class="avatar-title rounded-circle bg-primary bg-soft text-primary">
-                                                                        <strong>NS</strong>
-                                                                    </span>
-                                                            </div>
-                                                        </div>
+                                                        
 
                                                         <div class="flex-grow-1">
-                                                            <h5 class="font-size-14 mb-0">Leila Kalanzi</h5>
+                                                            <h5 class="font-size-14 mb-0">Joy Supermarkey</h5>
                                                         </div>
                                                     </div>
 
@@ -442,34 +439,35 @@
                                                 </td>
                                                 <td>Nov 4 2022 10:56 AM</td>
                                                 <td>
+                                                   <p class="mb-1 pb-0"> Njuri Ncheke St, Meru</p>
+                                                   <span class="badge badge-pill badge-soft-success font-size-11">Meru County</span>
+                                                </td>
+                                                <td>
                                                     12
                                                 </td>
                                                 <td>
                                                     57
                                                 </td>
                                                 <th>32</th>
+                                                <th>4,500 Li</th>
                                                 <td class="text-right text-uppercase"><strong class="data-carrency" data-selected-currency="UGX" data-base="UGX" data-amount="3000">KES 3,000</strong></td>
                                                 <td>
                                                     <!-- Button trigger modal -->
                                                     <button type="button" data-bs-toggle="modal" data-bs-target=".transaction-detailModal" class="btn btn-primary waves-effect waves-light btn-sm">
-                                                        <i class="mdi mdi-eye-outline font-size-16 align-middle me-2"></i> More Details
+                                                        <i class="bx bx-show font-size-16 align-middle me-2"></i> More Details
                                                     </button>
+
+                                                    <a href="distributor-statements.html" class="btn btn btn-success waves-effect waves-light btn-sm"><i class="bx bx-file font-size-16 align-middle me-2"></i>Statements</a>
                                                 </td>
                                             </tr>
 
                                             <tr>
                                                 <td class="">
                                                     <div class="d-flex align-items-center">
-                                                        <div class="flex-shrink-0 me-3">
-                                                            <div class="avatar-xs">
-                                                                <span class="avatar-title rounded-circle bg-primary bg-soft text-primary">
-                                                                        <strong>NS</strong>
-                                                                    </span>
-                                                            </div>
-                                                        </div>
+                                                        
 
                                                         <div class="flex-grow-1">
-                                                            <h5 class="font-size-14 mb-0">Madina Nalwanga</h5>
+                                                            <h5 class="font-size-14 mb-0">Safi Holdings</h5>
                                                         </div>
                                                     </div>
 
@@ -486,34 +484,33 @@
                                                 </td>
                                                 <td>Nov 4 2022 10:56 AM</td>
                                                 <td>
+                                                   <p class="mb-1 pb-0"> Makutano - Kitui Road</p>
+                                                   <span class="badge badge-pill badge-soft-success font-size-11">Machakos County</span>
+                                                </td>
+                                                <td>
                                                     45
                                                 </td>
                                                 <td>
                                                     34
                                                 </td>
                                                 <th>32</th>
+                                                <th>4,500 Li</th>
                                                 <td class="text-right text-uppercase"><strong class="data-carrency" data-selected-currency="UGX" data-base="UGX" data-amount="2200">KES 2,200</strong></td>
                                                 <td>
                                                     <!-- Button trigger modal -->
                                                     <button type="button" data-bs-toggle="modal" data-bs-target=".transaction-detailModal" class="btn btn-primary waves-effect waves-light btn-sm">
-                                                        <i class="mdi mdi-eye-outline font-size-16 align-middle me-2"></i> More Details
+                                                        <i class="bx bx-show font-size-16 align-middle me-2"></i> More Details
                                                     </button>
+
+                                                    <a href="distributor-statements.html" class="btn btn btn-success waves-effect waves-light btn-sm"><i class="bx bx-file font-size-16 align-middle me-2"></i>Statements</a>
                                                 </td>
                                             </tr>
 
                                             <tr>
                                                 <td class="">
                                                     <div class="d-flex align-items-center">
-                                                        <div class="flex-shrink-0 me-3">
-                                                            <div class="avatar-xs">
-                                                                <span class="avatar-title rounded-circle bg-primary bg-soft text-primary">
-                                                                        <strong>NS</strong>
-                                                                    </span>
-                                                            </div>
-                                                        </div>
-
                                                         <div class="flex-grow-1">
-                                                            <h5 class="font-size-14 mb-0">Patrick Ssenjovu</h5>
+                                                            <h5 class="font-size-14 mb-0">Flex Store</h5>
                                                         </div>
                                                     </div>
 
@@ -530,23 +527,31 @@
                                                 </td>
                                                 <td>Nov 4 2022 10:56 AM</td>
                                                 <td>
+                                                   <p class="mb-1 pb-0"> Kivaa - Gitaru Road</p>
+                                                   <span class="badge badge-pill badge-soft-success font-size-11">Embu County</span>
+                                                </td>
+                                                <td>
                                                     56
                                                 </td>
                                                 <td>
                                                     5
                                                 </td>
                                                 <th>32</th>
+                                                <th>4,500 Li</th>
                                                 <td class="text-right text-uppercase"><strong class="data-carrency" data-selected-currency="UGX" data-base="UGX" data-amount="2000">kes 2,000</strong></td>
                                                 <td>
                                                     <!-- Button trigger modal -->
                                                     <button type="button" data-bs-toggle="modal" data-bs-target=".transaction-detailModal" class="btn btn-primary waves-effect waves-light btn-sm">
-                                                        <i class="mdi mdi-eye-outline font-size-16 align-middle me-2"></i> More Details
+                                                        <i class="bx bx-show font-size-16 align-middle me-2"></i> More Details
                                                     </button>
+
+                                                    <a href="distributor-statements.html" class="btn btn btn-success waves-effect waves-light btn-sm"><i class="bx bx-file font-size-16 align-middle me-2"></i>Statements</a>
 
                                                 </td>
                                             </tr>
                                         </tbody>
                                     </table>
+                                    </div>
                                 </div>
                             </div>
                         </div>
