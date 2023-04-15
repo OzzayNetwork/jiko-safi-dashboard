@@ -23,9 +23,10 @@
     <!-- Bootstrap select styling -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.14/dist/css/bootstrap-select.min.css">
     <!-- Icons Css -->
+    <link href="assets/css/icons.min.css" rel="stylesheet" type="text/css" />
+
     <!-- date range picker -->
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
-    <link href="assets/css/icons.min.css" rel="stylesheet" type="text/css" />
     <!-- App Css-->
     <link href="assets/css/app.min.css" id="app-style" rel="stylesheet" type="text/css" />
     <!-- custom Css-->
@@ -325,7 +326,7 @@
                     <div class="row">
                         <div class="col-12">
                             <div class="page-title-box d-sm-flex align-items-center justify-content-between">
-                                <h4 class="mb-sm-0 font-size-18">Supply Statements</h4>
+                                <h4 class="mb-sm-0 font-size-18">Sales Statements</h4>
 
                                 <div class="page-title-right">
                                     <ol class="breadcrumb m-0">
@@ -370,7 +371,7 @@
                             <div class="card">
                                 <div class="card-body bg-white d-flex justify-content-between align-items-center border-bottom">
                                     <h4 class="card-title ">
-                                        Joy Supermarket
+                                        Joy Supermarket sales statements
                                     </h4>
                                     <div class="">
                                         <div id="reportrange" class="d-flex align-items-center" style="background: #fff; cursor: pointer; padding: 5px 10px; border: 1px solid #ccc; width: 100%">
@@ -386,10 +387,11 @@
                                         <thead class="table-dark">
                                             <tr>
                                                 <th>Date</th>
+                                                <th>Recepient</th>
                                                 <th>Item</th>
                                                 <th>Quantity</th>
-                                                <th>Registered By</th>
-                                                <th class="text-right">Supply Value</th>                                                
+                                                <th class="text-right">Commission</th>    
+                                                <th class="text-right">Value Of Items</th>                                                
                                                 <th>Actions</th>
                                             </tr>
                                         </thead>
@@ -399,6 +401,9 @@
                                                 <span>Ethanol (245,890 Li)</span>
                                                 <span class="mx-2">Double Bunner (345)</span>
                                                 <span>Single Bunner (54)</span>
+                                            </th>
+                                            <th class="text-right">
+                                                KES 5,679,000
                                             </th>
                                             <th class="text-right">
                                                 KES 5,679,000
@@ -415,15 +420,16 @@
                                                     5 Jan 2023 12:45 PM
                                                 </td>
                                                 <td>
-                                                    Ethanol
+                                                    <a href="">Tommie Brown</a>
                                                 </td>
                                                 <td>
-                                                   345 Liters
+                                                   Ethanol
                                                 </td>
                                                 <td>
-                                                    <a href="user-details.html">Kelvin Njuguna</a>
+                                                    5 Li 
                                                 </td>
-                                                <td class="text-right">KES 45,900</td>
+                                                <td class="text-right">KES 3.50</td>
+                                                <td class="text-right">KES 350</td>
                                                 
                                                 <td>
                                                     <!-- Button trigger modal -->
@@ -435,18 +441,19 @@
 
                                             <tr>
                                                 <td class="">
-                                                    5 Jan 2023 12:45 PM
+                                                    5 Jan 2023 08:30 AM
+                                                </td>
+                                                <td>
+                                                    <a href="">Alex wanjala</a>
                                                 </td>
                                                 <td>
                                                     Generic Jiko Safi E-Cooker Double Burner
                                                 </td>
                                                 <td>
-                                                   45 Items
+                                                    1 item
                                                 </td>
-                                                <td>
-                                                    <a href="user-details.html">Kelvin Njuguna</a>
-                                                </td>
-                                                <td class="text-right">KES 45,900</td>
+                                                <td class="text-right">KES 500</td>
+                                                <td class="text-right">KES 1,500</td>
                                                 
                                                 <td>
                                                     <!-- Button trigger modal -->
@@ -460,16 +467,18 @@
                                                 <td class="">
                                                     15 Jan 2023 11:23 PM
                                                 </td>
+                                                
+                                                <td>
+                                                    <a href="user-details.html">Kelvin Njuguna</a>
+                                                </td>
                                                 <td>
                                                     Generic Jiko Safi E-Cooker Single Burner
                                                 </td>
                                                 <td>
-                                                   23 Items
+                                                    6 Items
                                                 </td>
-                                                <td>
-                                                    <a href="user-details.html">Kelvin Njuguna</a>
-                                                </td>
-                                                <td class="text-right">KES 45,900</td>
+                                                <td class="text-right">KES 2,000</td>
+                                                <td class="text-right">KES 4,200</td>
                                                 
                                                 <td>
                                                     <!-- Button trigger modal -->
@@ -479,51 +488,7 @@
                                                 </td>
                                             </tr>
 
-                                            <tr>
-                                                <td class="">
-                                                    5 Jan 2023 12:45 PM
-                                                </td>
-                                                <td>
-                                                    Ethanol
-                                                </td>
-                                                <td>
-                                                   345 Liters
-                                                </td>
-                                                <td>
-                                                    <a href="user-details.html">Kelvin Njuguna</a>
-                                                </td>
-                                                <td class="text-right">KES 45,900</td>
-                                                
-                                                <td>
-                                                    <!-- Button trigger modal -->
-                                                    <button type="button" data-bs-toggle="modal" data-bs-target=".transaction-detailModal" class="btn btn-primary waves-effect waves-light btn-sm">
-                                                        <i class="bx bx-show font-size-16 align-middle me-2"></i> More Details
-                                                    </button>
-                                                </td>
-                                            </tr>
-
-                                            <tr>
-                                                <td class="">
-                                                    5 Jan 2023 12:45 PM
-                                                </td>
-                                                <td>
-                                                    Ethanol
-                                                </td>
-                                                <td>
-                                                   345 Liters
-                                                </td>
-                                                <td>
-                                                    <a href="user-details.html">Kelvin Njuguna</a>
-                                                </td>
-                                                <td class="text-right">KES 45,900</td>
-                                                
-                                                <td>
-                                                    <!-- Button trigger modal -->
-                                                    <button type="button" data-bs-toggle="modal" data-bs-target=".transaction-detailModal" class="btn btn-primary waves-effect waves-light btn-sm">
-                                                        <i class="bx bx-show font-size-16 align-middle me-2"></i> More Details
-                                                    </button>
-                                                </td>
-                                            </tr>
+                                            
 
                                         </tbody>
                                     </table>
@@ -686,6 +651,34 @@
     <!-- App js -->
     <script src="assets/js/app.js"></script>
     <script src="assets/js/custom.js"></script>
+
+    <script type="text/javascript">
+        $(function() {
+        
+            var start = moment().subtract(29, 'days');
+            var end = moment();
+        
+            function cb(start, end) {
+                $('#reportrange span').html(start.format('MMMM D, YYYY') + ' - ' + end.format('MMMM D, YYYY'));
+            }
+        
+            $('#reportrange').daterangepicker({
+                startDate: start,
+                endDate: end,
+                ranges: {
+                   'Today': [moment(), moment()],
+                   'Yesterday': [moment().subtract(1, 'days'), moment().subtract(1, 'days')],
+                   'Last 7 Days': [moment().subtract(6, 'days'), moment()],
+                   'Last 30 Days': [moment().subtract(29, 'days'), moment()],
+                   'This Month': [moment().startOf('month'), moment().endOf('month')],
+                   'Last Month': [moment().subtract(1, 'month').startOf('month'), moment().subtract(1, 'month').endOf('month')]
+                }
+            }, cb);
+        
+            cb(start, end);
+        
+        });
+        </script>
 </body>
 
 
