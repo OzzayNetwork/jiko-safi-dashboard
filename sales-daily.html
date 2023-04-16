@@ -353,6 +353,15 @@
                                         Joy Supermarket
                                     </h4>
                                     <div class="d-flex">
+                                        <div class="me-2">
+                                            <select class="form-select">
+                                                <option selected>All Counties</option>
+                                                <option>Meru County</option>
+                                                <option>Nyandarua County</option>
+                                                <option>Isiolo</option>
+                                                <option>Tharaka Nithii</option>
+                                            </select>
+                                        </div>
                                         <div class="">
                                             <select class="form-select">
                                                 <option selected>Ethanol</option>
@@ -360,7 +369,17 @@
                                                 <option>Generic Jiko Safi E-Cooker double Burner</option>
                                             </select>
                                         </div>
+
                                         <div class="mx-2">
+                                            <select class="form-control selectpicker form-select" title="Select Agent" data-live-search="true">
+                                                <option value="All Agents" selected>All Agents</option>
+                                                <option value="Alex Wanjala">Alex Wanjala</option>
+                                                <option value="Kelvin kinoti">Kelvin kinoti</option>
+                                                <option value="Dennis Kimotho">Dennis Kimotho</option>
+                                            </select>
+                                        </div>
+
+                                        <div class="me-2">
                                             <select class="form-control selectpicker form-select" title="Select Month" data-live-search="true">
                                                 <option value="01">January</option>
                                                 <option value="02">February</option>
@@ -377,7 +396,7 @@
                                             </select>
                                         </div>
 
-                                        <div class="mx-2">
+                                        <div class="">
                                             <select class="form-control selectpicker form-select" title="Select Year" data-live-search="true">
                                                 <option value="01">2021</option>
                                                 <option value="02">2022</option>
@@ -392,10 +411,12 @@
                                         <thead class="table-dark">
                                             <tr>
                                                 <th>Date</th>
-                                                <th>Quantity of Sales</th>
-                                                <th>Clients Served</th>
-                                                <th class="text-right">Value Of Sales</th>
-                                                <th class="text-right">Commisons Value</th>
+                                                <th>Agent</th>
+                                                <th>Client</th>
+                                                <th>County</th>
+                                                <th>Quantity</th>
+                                                <th class="text-right">Total Amount</th>
+                                                <th class="text-right">Commission</th>
                                                 <th>Actions</th>
                                             </tr>
                                         </thead>
@@ -404,8 +425,10 @@
                                             <th colspan="">
                                                 Totals:
                                             </th>
+                                            <th>12 Agents</th>
+                                            <th>45 Clients</th>
+                                            <th>3 Counties</th>
                                             <th>4,890 Liters</th>
-                                            <th>342</th>
                                             <th class="text-right">KES 56,000.00</th>
                                             <th class="text-right">KES 3,900.00</th>
                                             
@@ -419,17 +442,22 @@
                                             
                                             <tr>
                                                 <td class="">
-                                                    2 Jan 2023
+                                                    1 Jan 2023 09:23 AM
                                                 </td>
                                                 <td>
-                                                    78 Liters
+                                                    <a href="">Alex Wanjala</a>
                                                 </td>
                                                 <td>
-                                                   22
+                                                    <a href="">Cleophas Makacha</a>
                                                 </td>
+                                                <td>Meru County</td>
+                                                <td>
+                                                    1 Liters
+                                                </td>
+                                                <td class="text-right">KES 170.00</td>
+                                                <td class="text-right">KES 17.00</td>
                                                 
-                                                <td class="text-right">KES 13,260.00</td>
-                                                <td class="text-right">KES 1,320.00</td>
+                                                
                                                 <td>
                                                     <!-- Button trigger modal -->
                                                     <button type="button" data-bs-toggle="modal" data-bs-target=".transaction-detailModal" class="btn btn-primary waves-effect waves-light btn-sm">
@@ -439,17 +467,22 @@
                                             </tr>
                                             <tr>
                                                 <td class="">
-                                                    3 Jan 2023
+                                                    1 Jan 2023 09:34 AM
                                                 </td>
                                                 <td>
-                                                    45 Liters
+                                                    <a href="">Alex Wanjala</a>
                                                 </td>
                                                 <td>
-                                                   12
+                                                    <a href="">Brian Ngure</a>
                                                 </td>
+                                                <td>Meru County</td>
+                                                <td>
+                                                    1 Liters
+                                                </td>
+                                                <td class="text-right">KES 170.00</td>
+                                                <td class="text-right">KES 17.00</td>
                                                 
-                                                <td class="text-right">KES 3,150.00</td>
-                                                <td class="text-right">KES 150.00</td>
+                                                
                                                 <td>
                                                     <!-- Button trigger modal -->
                                                     <button type="button" data-bs-toggle="modal" data-bs-target=".transaction-detailModal" class="btn btn-primary waves-effect waves-light btn-sm">
@@ -459,17 +492,22 @@
                                             </tr>
                                             <tr>
                                                 <td class="">
-                                                    1 Jan 2023
+                                                    1 Jan 2023 10:20 AM
                                                 </td>
                                                 <td>
-                                                    45 Liters
+                                                    <a href="">Alex Wanjala</a>
                                                 </td>
                                                 <td>
-                                                   12
+                                                    <a href="">Brian Kinoti</a>
                                                 </td>
+                                                <td>Meru County</td>
+                                                <td>
+                                                    1 Liters
+                                                </td>
+                                                <td class="text-right">KES 170.00</td>
+                                                <td class="text-right">KES 17.00</td>
                                                 
-                                                <td class="text-right">KES 3,150.00</td>
-                                                <td class="text-right">KES 150.00</td>
+                                                
                                                 <td>
                                                     <!-- Button trigger modal -->
                                                     <button type="button" data-bs-toggle="modal" data-bs-target=".transaction-detailModal" class="btn btn-primary waves-effect waves-light btn-sm">
@@ -479,17 +517,22 @@
                                             </tr>
                                             <tr>
                                                 <td class="">
-                                                    4 Jan 2023
+                                                    1 Jan 2023 09:43 AM
                                                 </td>
                                                 <td>
-                                                    45 Liters
+                                                    <a href="">Alex Wanjala</a>
                                                 </td>
                                                 <td>
-                                                   12
+                                                    <a href="">Ann Kantui</a>
                                                 </td>
+                                                <td>Meru County</td>
+                                                <td>
+                                                    1 Liters
+                                                </td>
+                                                <td class="text-right">KES 170.00</td>
+                                                <td class="text-right">KES 17.00</td>
                                                 
-                                                <td class="text-right">KES 3,150.00</td>
-                                                <td class="text-right">KES 150.00</td>
+                                                
                                                 <td>
                                                     <!-- Button trigger modal -->
                                                     <button type="button" data-bs-toggle="modal" data-bs-target=".transaction-detailModal" class="btn btn-primary waves-effect waves-light btn-sm">
@@ -499,57 +542,22 @@
                                             </tr>
                                             <tr>
                                                 <td class="">
-                                                    5 Jan 2023
+                                                    1 Jan 2023 10:52 AM
                                                 </td>
                                                 <td>
-                                                    45 Liters
+                                                    <a href="">Alex Wanjala</a>
                                                 </td>
                                                 <td>
-                                                   12
+                                                    <a href="">Mary Muthomi</a>
                                                 </td>
+                                                <td>Meru County</td>
+                                                <td>
+                                                    1 Liters
+                                                </td>
+                                                <td class="text-right">KES 170.00</td>
+                                                <td class="text-right">KES 17.00</td>
                                                 
-                                                <td class="text-right">KES 3,150.00</td>
-                                                <td class="text-right">KES 150.00</td>
-                                                <td>
-                                                    <!-- Button trigger modal -->
-                                                    <button type="button" data-bs-toggle="modal" data-bs-target=".transaction-detailModal" class="btn btn-primary waves-effect waves-light btn-sm">
-                                                        <i class="bx bx-show font-size-16 align-middle me-2"></i> More Details
-                                                    </button>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td class="">
-                                                    6 Jan 2023
-                                                </td>
-                                                <td>
-                                                    45 Liters
-                                                </td>
-                                                <td>
-                                                   12
-                                                </td>
                                                 
-                                                <td class="text-right">KES 3,150.00</td>
-                                                <td class="text-right">KES 150.00</td>
-                                                <td>
-                                                    <!-- Button trigger modal -->
-                                                    <button type="button" data-bs-toggle="modal" data-bs-target=".transaction-detailModal" class="btn btn-primary waves-effect waves-light btn-sm">
-                                                        <i class="bx bx-show font-size-16 align-middle me-2"></i> More Details
-                                                    </button>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td class="">
-                                                    7 Jan 2023
-                                                </td>
-                                                <td>
-                                                    45 Liters
-                                                </td>
-                                                <td>
-                                                   12
-                                                </td>
-                                                
-                                                <td class="text-right">KES 3,150.00</td>
-                                                <td class="text-right">KES 150.00</td>
                                                 <td>
                                                     <!-- Button trigger modal -->
                                                     <button type="button" data-bs-toggle="modal" data-bs-target=".transaction-detailModal" class="btn btn-primary waves-effect waves-light btn-sm">
