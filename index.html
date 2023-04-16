@@ -18,6 +18,8 @@
     <link href="assets/css/bootstrap.min.css" id="bootstrap-style" rel="stylesheet" type="text/css" />
     <!-- Icons Css -->
     <link href="assets/css/icons.min.css" rel="stylesheet" type="text/css" />
+    <!-- Bootstrap select styling -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.14/dist/css/bootstrap-select.min.css">
     <!-- App Css-->
     <link href="assets/css/app.min.css" id="app-style" rel="stylesheet" type="text/css" />
     <!-- custom Css-->
@@ -318,7 +320,6 @@
 
                                 <div class="page-title-right">
                                     <ol class="breadcrumb m-0">
-                                        <li class="breadcrumb-item"><a href="javascript: void(0);">Dashboards</a></li>
                                         <li class="breadcrumb-item active">Dashboard</li>
                                     </ol>
                                 </div>
@@ -331,69 +332,85 @@
                         <div class="col-lg-12 px-sm-30px">
                             <div class="card">
                                 <div class="card-body">
-                                    <div class="row">
-                                        <div class="col-lg-4">
-                                            <div class="d-flex">
-                                                <div class="flex-shrink-0 me-3">
-                                                    <img src="assets/images/users/avatar-1.png" alt="your Logo" class="avatar-md rounded-circle img-thumbnail">
-                                                </div>
-                                                <div class="flex-grow-1 align-self-center">
-                                                    <div class="text-muted">
-                                                        <p class="mb-2">Welcome Back</p>
-                                                        <h5 class="mb-1">John & Jo's Resturant</h5>
-                                                        <p class="mb-0">Summary overview with filters for more personalized experience.</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
+                                    <div class="row">                                       
 
-                                        <div class="col-lg-8 align-self-center">
+                                        <div class="col-lg-12 align-self-center">
                                             <div class="text-lg-left mt-4 mt-lg-0">
                                                 <div class="row">
-                                                    <div class="col-3 col-sm-3 col-md-3 col-sm-6">
+                                                    <div class="col-lg-2 col-sm-6 col-lg-2">
+                                                        <div class="d-flex">
+                                                            
+                                                            <div class="flex-grow-1 align-self-center">
+                                                                <div class="text-muted">
+                                                                    <p class="mb-2">Stats overview for</p>
+                                                                    <div>
+                                                                        <select class="form-control selectpicker" fdprocessedid="msspc">
+                                                                            <option>All Counties</option>
+                                                                            <option>Meru County</option>
+                                                                            <option>Kirinyaga County</option>
+                                                                            <option value="">Embu County</option>
+                                                                            <option value="">Tharaka Nithi</option>
+                                                                        </select>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-3 col-sm-6 col-md-4 col-sm-6 col-lg-2">
                                                         <div>
                                                             <div class="avatar-xs mb-3">
                                                                 <span class="avatar-title rounded-circle bg-info font-size-16">
-                                                                        <i class="mdi mdi-account-details-outline text-white"></i>
+                                                                        <i class="mdi mdi-account-cog-outline text-white"></i>
                                                                     </span>
                                                             </div>
                                                             <p class="text-muted text-truncate mb-2">Registered Clients</p>
-                                                            <h5 class="mb-0">1,489</h5>
+                                                            <h5 class="mb-0">781,489</h5>
                                                         </div>
                                                     </div>
-
-                                                    <div class="col-3 col-md-3 col-sm-6">
+                                                    <div class="col-3 col-md-4 col-sm-6 col-lg-2">
                                                         <div>
                                                             <div class="avatar-xs mb-3">
                                                                 <span class="avatar-title rounded-circle bg-whatsApp font-size-16">
                                                                         <i class="mdi mdi-account-multiple-plus-outline"></i>
                                                                     </span>
                                                             </div>
-                                                            <p class="text-muted text-truncate mb-2">New Clients</p>
-                                                            <h5 class="mb-0">+3</h5>
+                                                            <p class="text-muted text-truncate mb-2">Agents</p>
+                                                            <h5 class="mb-0">310</h5>
 
                                                         </div>
                                                     </div>
-                                                    <div class="col-3 col-sm-3 col-md-3 col-sm-6">
+                                                    <div class="col-3 col-sm-6 col-md-4 col-sm-6 col-lg-2">
                                                         <div>
                                                             <div class="avatar-xs mb-3">
                                                                 <span class="avatar-title rounded-circle font-size-16">
-                                                                        <i class="mdi mdi-cash-register text-white"></i>
+                                                                        <i class="mdi mdi-truck-delivery-outline text-white"></i>
                                                                     </span>
                                                             </div>
-                                                            <p class="text-muted text-truncate mb-2">Registered Cashiers</p>
-                                                            <h5 class="mb-0">8</h5>
+                                                            <p class="text-muted text-truncate mb-2">Distributors</p>
+                                                            <h5 class="mb-0">18</h5>
                                                         </div>
                                                     </div>
-                                                    <div class="col-3 col-sm-3 col-md-3 col-sm-6">
+                                                    <div class="col-3 col-sm-6 col-md-4 col-sm-6 col-lg-2">
                                                         <div>
                                                             <div class="avatar-xs mb-3">
-                                                                <span class="avatar-title rounded-circle bg-success font-size-16">
-                                                                        <i class="mdi mdi-wifi-check text-white"></i>
+                                                                <span class="avatar-title rounded-circle bg-danger font-size-16">
+                                                                        <i class="mdi mdi-water-outline text-white"></i>
                                                                     </span>
                                                             </div>
-                                                            <p class="text-muted text-truncate mb-2">Active Cashiers</p>
-                                                            <h5 class="mb-0">2</h5>
+                                                            <p class="text-muted text-truncate mb-2">Supplied Ethanol</p>
+                                                            <h5 class="mb-0">103,200 L</h5>
+
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-3 col-sm-6 col-md-4 col-sm-6 col-lg-2">
+                                                        <div>
+                                                            <div class="avatar-xs mb-3">
+                                                                <span class="avatar-title rounded-circle bg-dark font-size-16">
+                                                                        <i class="mdi mdi-fire text-white"></i>
+                                                                    </span>
+                                                            </div>
+                                                            <p class="text-muted text-truncate mb-2">Stove Sales</p>
+                                                            <h5 class="mb-0">823,789</h5>
 
                                                         </div>
                                                     </div>
@@ -574,25 +591,18 @@
                                         <h4 class="card-title mb-0">Weekly Products Perfomance</h4>
                                     </div>
                                     <div class="d-flex">
-                                        
-                                        <select class="form-control selectpicker" data-live-search="true" title="Select Stock Type " data-style="form-select btn border btn-sm pe-5">
-                                            <option value="">Production</option>
-                                            <option value="">Sales</option>   
-                                            <option value="">Closing Balance</option>                                                               
-                                        </select>
-
                                         <select class="form-control selectpicker mx-2 " data-live-search="true" title="Products" data-style="form-control form-select btn-sm btn border pe-5">
-                                            <option value="">All Products</option>
-                                            <option value="">Samosa</option>   
-                                            <option value="">French Fries</option>    
-                                            <option value="">Boiled Eggs</option>                                                               
+                                            <option value="" selected>Ethanol Sales</option>
+                                            <option value="">All Burners</option> 
+                                            <option value="">Double Burner</option>   
+                                            <option value="">Single Burners</option>    
                                         </select>
 
                                         <select class="form-control selectpicker form-select  mx-2 " data-live-search="true" title="Select Cashiers" data-style="form-select btn border btn-sm pe-5">
-                                            <option value="">All Cashiers</option>
-                                            <option value="">Alex Wanjala</option>   
-                                            <option value="">Mary Kavere</option>    
-                                            <option value="">Ann Wanja</option>                                                               
+                                            <option value="">All Counties</option>
+                                            <option value="">Meru County</option>   
+                                            <option value="">Kirinyaga County</option>    
+                                            <option value="">Embu County</option>                                                               
                                         </select>
                                         <input class="form-control form-control-sm" type="week" value="2019-W33" id="example-week-input">
                                     </div>
@@ -609,7 +619,7 @@
                                         <div class="me-2 d-flex">
                                             <select class="form-control selectpicker" data-live-search="true" title="Select Stock Type " data-style="form-select btn border btn-sm pe-5">
                                                 <option value="" selected>Sales</option>
-                                                <option value="">Production</option>   
+                                                <option value="">Distributions</option>   
                                             </select>
                                             <input class="form-control form-control-sm mx-3 select-week d-none" type="week" value="2019-W33" id="example-week-input">
     
@@ -725,32 +735,51 @@
     <!-- Right bar overlay-->
     <div class="rightbar-overlay "></div>
 
-    <!-- JAVASCRIPT -->
-    <script src="assets/libs/jquery/jquery.min.js "></script>
-    <script src="assets/libs/bootstrap/js/bootstrap.bundle.min.js "></script>
-    <script src="assets/libs/metismenu/metisMenu.min.js "></script>
-    <script src="assets/libs/simplebar/simplebar.min.js "></script>
-    <script src="assets/libs/node-waves/waves.min.js "></script>
+   <!-- JAVASCRIPT -->
+   <script src="assets/libs/jquery/jquery.min.js "></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js " integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49 " crossorigin="anonymous "></script>
+   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js " integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy " crossorigin="anonymous "></script>
 
-    <!-- numerals number formater -->
-    <script src="assets/libs/numeral/numeral.js "></script>
+   <script src="assets/libs/bootstrap/js/bootstrap.bundle.min.js "></script>
+   <script src="assets/libs/metismenu/metisMenu.min.js "></script>
+   <script src="assets/libs/simplebar/simplebar.min.js "></script>
+   <script src="assets/libs/node-waves/waves.min.js "></script>
+   <script src="assets/libs/bootstrap/js/bootstrap.bundle.min.js "></script>
+   <script src="assets/libs/metismenu/metisMenu.min.js "></script>
+   <script src="assets/libs/simplebar/simplebar.min.js "></script>
+   <script src="assets/libs/node-waves/waves.min.js "></script>
 
-    <!-- apexcharts -->
-    <script src="assets/libs/apexcharts/apexcharts.min.js "></script>
+    <!-- Bootstrap select -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.14/dist/js/bootstrap-select.min.js "></script>
+
+   <!-- numerals number formater -->
+   <script src="assets/libs/numeral/numeral.js "></script>
+
+   <!-- apexcharts -->
+   <script src="assets/libs/apexcharts/apexcharts.min.js "></script>
 
 
-    <!-- dashboard init -->
-    <script src="assets/js/pages/dashboard.init.js "></script>
-    <!-- Saas dashboard init -->
-    <script src="assets/js/pages/earlyBirdDashboard.js "></script>
-    <script src="assets/js/pages/saas-dashboard.init.js"></script>
+   <!-- dashboard init -->
+   <script src="assets/js/pages/dashboard.init.js "></script>
+   <!-- Saas dashboard init -->
+   <script src="assets/js/pages/earlyBirdDashboard.js "></script>
+
+   <!-- highchart js files -->
+   <script src="https://code.highcharts.com/highcharts.js"></script>
+   <script src="https://code.highcharts.com/modules/heatmap.js"></script>
+   <script src="https://code.highcharts.com/modules/exporting.js"></script>
+   <script src="https://code.highcharts.com/modules/export-data.js"></script>
+   <script src="https://code.highcharts.com/modules/accessibility.js"></script>
+
+   <script src="assets/js/pages/annual-sales-perfomance.js "></script>
+   <script src="assets/js/pages/weekly-sales-perfomance.js "></script>
 
 
 
-
-    <!-- App js -->
-    <script src="assets/js/app.js "></script>
-    <script src="assets/js/custom.js "></script>
+   <!-- App js -->
+   <script src="assets/js/app.js "></script>
+   <script src="assets/js/custom.js "></script>
+   <script src="assets/js/pages/heatMap.js "></script>
 </body>
 
 

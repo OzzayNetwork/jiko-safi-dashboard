@@ -741,6 +741,17 @@ $(window).on('load', function() {
 
 $(document).ready(function() {
 
+    $('.nav-yearly').on('click', function(){
+        $('.vales-options-cont #annual-sales').removeClass('d-none').siblings().addClass('d-none')
+        $('.select-week').addClass('d-none')
+        // alert("clicked")
+    })
+
+    $('.nav-weekly').on('click', function(){
+        $('.vales-options-cont #weekly-sales').removeClass('d-none').siblings().addClass('d-none');
+        $('.select-week').removeClass('d-none')
+    })
+
     $('.dismin-modal').on('click', function(){
         $('#payment-modal').modal('hide')
     })
