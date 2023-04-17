@@ -698,11 +698,11 @@ body[data-sidebar=dark] .vertical-menu {
 }
 
 body[data-sidebar=dark] #sidebar-menu ul li a {
-    color: #cecece
+    color: #a6b0cf
 }
 
 body[data-sidebar=dark] #sidebar-menu ul li a i {
-    color: #cecece
+    color: #6a7187
 }
 
 body[data-sidebar=dark] #sidebar-menu ul li a:hover {
@@ -714,7 +714,7 @@ body[data-sidebar=dark] #sidebar-menu ul li a:hover i {
 }
 
 body[data-sidebar=dark] #sidebar-menu ul li ul.sub-menu li a {
-    color: #cecece
+    color: #79829c
 }
 
 body[data-sidebar=dark] #sidebar-menu ul li ul.sub-menu li a:hover {
@@ -771,11 +771,11 @@ body[data-sidebar=dark] .mm-active>i {
 }
 
 body[data-sidebar=dark] .mm-active .active {
-    color: #ffeb3b!important
+    color: #fff!important
 }
 
 body[data-sidebar=dark] .mm-active .active i {
-    color: #ffeb3b!important
+    color: #fff!important
 }
 
 body[data-sidebar=dark] .menu-title {
@@ -1655,7 +1655,7 @@ body[data-layout=horizontal][data-layout-size=boxed] .navbar-header {
     display: block;
     width: 25%;
     height: 25%;
-    background-color: #008134;
+    background-color: #556ee6;
     border-radius: 100%;
     -webkit-animation: chase-dot-before 2s infinite ease-in-out both;
     animation: chase-dot-before 2s infinite ease-in-out both
@@ -4214,7 +4214,7 @@ table.dataTable.dtr-inline.collapsed>tbody>tr>td.dtr-control:before {
 }
 
 .auth-full-bg {
-    background-color: rgb(50, 49, 48);
+    background-color:#dff1eed1;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex
@@ -4719,7 +4719,7 @@ table.dataTable.dtr-inline.collapsed>tbody>tr>td.dtr-control:before {
     height: 1px;
     left: 0;
     right: 0;
-    background-color: #eff2f7;
+    background-color: #ffffff;
     top: 10px
 }
 
@@ -4737,7 +4737,8 @@ table.dataTable.dtr-inline.collapsed>tbody>tr>td.dtr-control:before {
     padding: 12px 24px;
     background-color: rgba(85, 110, 230, .1);
     border-radius: 8px 8px 8px 0;
-    overflow: hidden
+    overflow: hidden;
+    background-color: white;
 }
 
 .chat-conversation .conversation-list .ctext-wrap .conversation-name {
@@ -4777,7 +4778,7 @@ table.dataTable.dtr-inline.collapsed>tbody>tr>td.dtr-control:before {
 }
 
 .chat-conversation .right .conversation-list .ctext-wrap {
-    background-color: #eff2f7;
+    background-color:#d9fdd3;
     text-align: right;
     border-radius: 8px 8px 0 8px
 }
@@ -4812,10 +4813,13 @@ table.dataTable.dtr-inline.collapsed>tbody>tr>td.dtr-control:before {
 }
 
 .chat-input {
-    border-radius: 30px;
+    padding: 1rem;
+    border-radius: 32px;
     background-color: #eff2f7!important;
     border-color: #eff2f7!important;
-    padding-right: 120px
+    padding-right: 120px;
+    font-size: 1rem;
+    padding-left: 2rem;
 }
 
 .chat-input-links {
@@ -5020,7 +5024,7 @@ table.dataTable.dtr-inline.collapsed>tbody>tr>td.dtr-control:before {
     bottom: 0;
     left: 0;
     top: 0;
-    opacity: .3;
+    opacity: .7;
     background-color: #000
 }
 
@@ -5295,6 +5299,18 @@ table.dataTable.dtr-inline.collapsed>tbody>tr>td.dtr-control:before {
     -webkit-transform: translateY(-50%);
     transform: translateY(-50%);
     margin: 0 auto
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #2fb895;
+    border-color: #2fb895;
+}
+
+.btn-primary:hover {
+    color: #fff;
+    background-color: #29a786;
+    border-color: #29a786;
 }
 
 
