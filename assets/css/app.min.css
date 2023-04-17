@@ -4214,7 +4214,7 @@ table.dataTable.dtr-inline.collapsed>tbody>tr>td.dtr-control:before {
 }
 
 .auth-full-bg {
-    background-color: rgba(85, 110, 230, .25);
+    background-color: rgb(50, 49, 48);
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex
@@ -5020,7 +5020,7 @@ table.dataTable.dtr-inline.collapsed>tbody>tr>td.dtr-control:before {
     bottom: 0;
     left: 0;
     top: 0;
-    opacity: .7;
+    opacity: .3;
     background-color: #000
 }
 
