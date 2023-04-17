@@ -336,7 +336,7 @@
                                     <ol class="breadcrumb m-0">
                                         <li class="breadcrumb-item"><a href="index.html">Home</a></li>
                                         <li class="breadcrumb-item"><a href="#">Finance Statements</a></li>
-                                        <li class="breadcrumb-item active">Agents Statements</li>
+                                        <li class="breadcrumb-item active">Client Statements</li>
                                     </ol>
                                 </div>
                             </div>
@@ -353,8 +353,13 @@
                                     <h4 class="card-title text-uppercase">
                                         April 2023 Statements
                                     </h4>
-                                    <div>
-                                        <button class="btn btn-primary">Add A Distributor</button>
+                                    <div class="">
+                                        <select class=" form-select selectpicker py-0 pl-0 bg-white" title="select Month">
+                                            <option>January 2023</option>
+                                            <option>February 2023</option>
+                                            <option>March 2023</option>
+                                            
+                                        </select>
                                     </div>
                                 </div>
                                 <div class="card-body">
@@ -362,11 +367,10 @@
                                         <table id="datatable-buttons" class="table   nowrap w-100 table-striped">
                                         <thead class="table-dark">
                                             <tr>
-                                                <th>Agent</th>
+                                                <th>Client</th>
                                                 <th>Phone</th>
-                                                <th class="text-right">Value of sales</th>
-                                                <th class="text-right">Sales Commission</th>
-                                               
+                                                <th class="text-right">Value of referrals</th>
+                                                <th class="text-right">Referral Commission</th>
                                                 <th class="text-right">Opening Wallet Bal.</th>
                                                 <th class="text-right">Withdrawals</th>
                                                 <th class="text-right">Clossing wallet Bal.</th>
@@ -407,7 +411,7 @@
                                                 <td>
                                                     
 
-                                                    <a href="statements-agents-full.html" class="btn btn btn-success waves-effect waves-light btn-sm"><i class="bx bx-file font-size-16 align-middle me-2"></i>Full Statement</a>
+                                                    <a href="statements-client-full.html" class="btn btn btn-success waves-effect waves-light btn-sm"><i class="bx bx-file font-size-16 align-middle me-2"></i>Full Statement</a>
                                                 </td>
                                             </tr>
                                             <tr>
@@ -430,7 +434,7 @@
                                                 <td>
                                                     
 
-                                                    <a href="statements-agents-full.html" class="btn btn btn-success waves-effect waves-light btn-sm"><i class="bx bx-file font-size-16 align-middle me-2"></i>Full Statement</a>
+                                                    <a href="statements-client-full.html" class="btn btn btn-success waves-effect waves-light btn-sm"><i class="bx bx-file font-size-16 align-middle me-2"></i>Full Statement</a>
                                                 </td>
                                             </tr>
                                             <tr>
@@ -453,7 +457,7 @@
                                                 <td>
                                                     
 
-                                                    <a href="statements-agents-full.html" class="btn btn btn-success waves-effect waves-light btn-sm"><i class="bx bx-file font-size-16 align-middle me-2"></i>Full Statement</a>
+                                                    <a href="statements-client-full.html" class="btn btn btn-success waves-effect waves-light btn-sm"><i class="bx bx-file font-size-16 align-middle me-2"></i>Full Statement</a>
                                                 </td>
                                             </tr>
                                             <tr>
@@ -476,7 +480,7 @@
                                                 <td>
                                                     
 
-                                                    <a href="statements-agents-full.html" class="btn btn btn-success waves-effect waves-light btn-sm"><i class="bx bx-file font-size-16 align-middle me-2"></i>Full Statement</a>
+                                                    <a href="statements-client-full.html" class="btn btn btn-success waves-effect waves-light btn-sm"><i class="bx bx-file font-size-16 align-middle me-2"></i>Full Statement</a>
                                                 </td>
                                             </tr>
                                             <tr>
@@ -497,9 +501,7 @@
                                                 <td class="text-right">KES 2,000</td>
                                                 
                                                 <td>
-                                                    
-
-                                                    <a href="statements-agents-full.html" class="btn btn btn-success waves-effect waves-light btn-sm"><i class="bx bx-file font-size-16 align-middle me-2"></i>Full Statement</a>
+                                                    <a href="statements-client-full.html" class="btn btn btn-success waves-effect waves-light btn-sm"><i class="bx bx-file font-size-16 align-middle me-2"></i>Full Statement</a>
                                                 </td>
                                             </tr>
                                             
@@ -627,10 +629,25 @@
 
     <!-- JAVASCRIPT -->
     <script src="assets/libs/jquery/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js " integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49 " crossorigin="anonymous "></script>
+
     <script src="assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="assets/libs/metismenu/metisMenu.min.js"></script>
     <script src="assets/libs/simplebar/simplebar.min.js"></script>
     <script src="assets/libs/node-waves/waves.min.js"></script>
+
+    <script src="assets/libs/jquery/jquery.min.js "></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js " integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49 " crossorigin="anonymous "></script>
+   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js " integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy " crossorigin="anonymous "></script>
+
+   <script src="assets/libs/bootstrap/js/bootstrap.bundle.min.js "></script>
+   <script src="assets/libs/metismenu/metisMenu.min.js "></script>
+   <script src="assets/libs/simplebar/simplebar.min.js "></script>
+   <script src="assets/libs/node-waves/waves.min.js "></script>
+   <script src="assets/libs/bootstrap/js/bootstrap.bundle.min.js "></script>
+   <script src="assets/libs/metismenu/metisMenu.min.js "></script>
+   <script src="assets/libs/simplebar/simplebar.min.js "></script>
+   <script src="assets/libs/node-waves/waves.min.js "></script>
 
 
     <!-- Required datatable js -->
