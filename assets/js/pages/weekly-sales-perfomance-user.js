@@ -1,4 +1,4 @@
-Highcharts.chart('annual-sales', {
+Highcharts.chart('weekly-sales', {
     chart: {
         type: 'column',
         style: {
@@ -6,7 +6,7 @@ Highcharts.chart('annual-sales', {
         }
     },
     title: {
-        text: "Sales Value",
+        text: "My Weekly Sales",
         style: {
             fontSize: '14px' 
          }
@@ -16,18 +16,14 @@ Highcharts.chart('annual-sales', {
     },
     xAxis: {
         categories: [
-            'Jan',
-            'Feb',
-            'Mar',
-            'Apr',
-            'May',
-            'Jun',
-            'Jul',
-            'Aug',
-            'Sep',
-            'Oct',
-            'Nov',
-            'Dec'
+            'Mon',
+            'Tue',
+            'Wed',
+            'Thu',
+            'Fri',
+            'Sat',
+            'Sun',
+            
         ],
         crosshair: true
     },
@@ -55,24 +51,14 @@ Highcharts.chart('annual-sales', {
         }
     },
     series: [{
-        name: 'Double Burner',
-        color:'#00c399',
-        data: [43499, 145615, 156064, 125692, 134440, 291760, 178356, 148985, 216784,
-            197841, 95676, 54544]
-
-    },  {
         color:'#aae5d3',
-        name: 'Single burner',
-        data: [484559, 385668, 397873, 123414, 456770, 487893, 123590, 124596, 534524, 612352, 523493,
-            123512]
+        name: 'Last Week',
+        data: [ 123414, 456770, 487893, 123590, 124596, 534524, 0]
 
     }, {
-       
-        name: 'Ethanol',
-       
-        color:'black',
-        data: [124284, 312332, 343455, 345697, 534526, 745655, 571234, 604564, 471236, 312391, 434568,
-            556711]
+        name: 'This Week',
+        color:'#00c399',
+        data: [343455, 345697, 534526, 745655, 571234, 604564, 124]
 
     }]
 });
