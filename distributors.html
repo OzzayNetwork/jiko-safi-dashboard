@@ -437,7 +437,12 @@
                                                         <i class="bx bx-show font-size-16 align-middle me-2"></i> More Details
                                                     </button>
 
-                                                    <a href="distributor-statements.html" class="btn btn btn-success waves-effect waves-light btn-sm"><i class="bx bx-file font-size-16 align-middle me-2"></i>Statements</a>
+                                                    <a href="distributor-statements.html" class="btn btn btn-info waves-effect waves-light btn-sm"><i class="bx bx-file font-size-16 align-middle me-2"></i>Statements</a>
+
+                                                    <button type="button" data-bs-toggle="modal" data-bs-target=".update-stock-modal" class="btn btn-secondary waves-effect waves-light btn-sm">
+                                                        <i class="bx bx-plus font-size-16 align-middle me-2"></i> Update Stock
+                                                    </button>
+
                                                 </td>
                                             </tr>
 
@@ -482,7 +487,11 @@
                                                         <i class="bx bx-show font-size-16 align-middle me-2"></i> More Details
                                                     </button>
 
-                                                    <a href="distributor-statements.html" class="btn btn btn-success waves-effect waves-light btn-sm"><i class="bx bx-file font-size-16 align-middle me-2"></i>Statements</a>
+                                                    <a href="distributor-statements.html" class="btn btn btn-info waves-effect waves-light btn-sm"><i class="bx bx-file font-size-16 align-middle me-2"></i>Statements</a>
+
+                                                    <button type="button" data-bs-toggle="modal" data-bs-target=".update-stock-modal" class="btn btn-secondary waves-effect waves-light btn-sm">
+                                                        <i class="bx bx-plus font-size-16 align-middle me-2"></i> Update Stock
+                                                    </button>
                                                 </td>
                                             </tr>
 
@@ -527,7 +536,11 @@
                                                         <i class="bx bx-show font-size-16 align-middle me-2"></i> More Details
                                                     </button>
 
-                                                    <a href="distributor-statements.html" class="btn btn btn-success waves-effect waves-light btn-sm"><i class="bx bx-file font-size-16 align-middle me-2"></i>Statements</a>
+                                                    <a href="distributor-statements.html" class="btn btn btn-info waves-effect waves-light btn-sm"><i class="bx bx-file font-size-16 align-middle me-2"></i>Statements</a>
+
+                                                    <button type="button" data-bs-toggle="modal" data-bs-target=".update-stock-modal" class="btn btn-secondary waves-effect waves-light btn-sm">
+                                                        <i class="bx bx-plus font-size-16 align-middle me-2"></i> Update Stock
+                                                    </button>
                                                 </td>
                                             </tr>
 
@@ -570,7 +583,11 @@
                                                         <i class="bx bx-show font-size-16 align-middle me-2"></i> More Details
                                                     </button>
 
-                                                    <a href="distributor-statements.html" class="btn btn btn-success waves-effect waves-light btn-sm"><i class="bx bx-file font-size-16 align-middle me-2"></i>Statements</a>
+                                                    <a href="distributor-statements.html" class="btn btn btn-info waves-effect waves-light btn-sm"><i class="bx bx-file font-size-16 align-middle me-2"></i>Statements</a>
+
+                                                    <button type="button" data-bs-toggle="modal" data-bs-target=".update-stock-modal" class="btn btn-secondary waves-effect waves-light btn-sm">
+                                                        <i class="bx bx-plus font-size-16 align-middle me-2"></i> Update Stock
+                                                    </button>
 
                                                 </td>
                                             </tr>
@@ -666,6 +683,50 @@
                 </div>
             </div>
             <!-- end modal -->
+
+            <!-- update stock modal -->
+            <div class="modal fade update-stock-modal" tabindex="-1" role="dialog" aria-labelledby="transaction-detailModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="transaction-detailModalLabel">Add Stock</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="row">
+                                <div class="col-12 mb-3">
+                                    <div class="form-group">
+                                        <label for="">Item</label>
+                                        <select name="" class="form-select" id="">'
+                                            <option value="">Ethanol</option>
+                                            <option value="">Double Burner</option>
+                                            <option value="">Single Burner</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-12 mb-3">
+                                    <div class="form-group">
+                                        <label for="" class="text-capitalize">Date dispatched</label>
+                                        <input class="form-control" type="date" value="2019-08-19" id="example-date-input">
+                                    </div>
+                                </div>
+
+                                <div class="col-12">
+                                    <div class="form-group">
+                                        <label for="" class="text-capitalize">Item Quantity</label>
+                                        <input type="text" class="form-control" placeholder="Item Quantity">
+                                        <p><small>Liters</small></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <a type="button" href="" class="btn btn-primary w-100 text-center text-uppercase">Save</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- end of update stock modal -->
 
 
 
