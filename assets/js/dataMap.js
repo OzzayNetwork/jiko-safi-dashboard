@@ -474,9 +474,10 @@ Highcharts.mapChart('Map-data', {
                 {
                     "id": "County_41",
                     "y": 40,
-                    value: 656452
+                    value: 56452
                 },
                 {
+                    //Siaya
                     "id": "County_42",
                     "y": 41,
                     value: 56132
@@ -487,14 +488,16 @@ Highcharts.mapChart('Map-data', {
                     value: 256132
                 },
                 {
+                    //Homabay
                     "id": "County_43",
                     "y": 43,
-                    value: 656432
+                    value: 65643
                 },
                 {
+                    //Migori
                     "id": "County_44",
                     "y": 44,
-                    value: 656132
+                    value: 56132
                 },
                 {
                     "id": "County_10",

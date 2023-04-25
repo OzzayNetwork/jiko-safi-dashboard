@@ -35,7 +35,7 @@ Highcharts.chart('projections', {
         tickPosition: 'inside',
         tickColor: Highcharts.defaultOptions.chart.backgroundColor || '#FFFFFF',
         tickLength: 40,
-        tickWidth: 2,
+        tickWidth: 0.7,
         minorTickInterval: null,
         labels: {
             distance: 20,
