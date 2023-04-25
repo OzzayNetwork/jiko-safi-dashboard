@@ -603,119 +603,114 @@
                     <div class="row d-non">
                         <div class="col-sm-12 col-xl-6 col-md-5 px-sm-30px">
                             <div class="card">
-                                <div class="card-header d-flex align-items-center justify-content-between">
-                                    <div class="d-none">
-                                        <h4 class="card-title mb-0">Weekly Products Perfomance</h4>
-                                    </div>
-                                    <div class="d-flex">
-                                        <select class="form-control selectpicker mx-2 " data-live-search="true" title="Products" data-style="form-control form-select btn-sm btn border pe-5">
-                                            <option value="" selected>Ethanol Sales</option>
-                                            <option value="">All Burners</option> 
-                                            <option value="">Double Burner</option>   
-                                            <option value="">Single Burners</option>    
-                                        </select>
-
-                                        <select class="form-control selectpicker form-select  mx-2 " data-live-search="true" title="Select Cashiers" data-style="form-select btn border btn-sm pe-5">
-                                            <option value="">All Counties</option>
-                                            <option value="">Meru County</option>   
-                                            <option value="">Kirinyaga County</option>    
-                                            <option value="">Embu County</option>                                                               
-                                        </select>
-                                        <input class="form-control form-control-sm" type="week" value="2019-W33" id="example-week-input">
-                                    </div>
-                                </div>
-                                <div class="card-body">
-                                    <div id="heatMap"></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xl-6 col-md-7 px-sm-30px">
-                            <div class="card">
-                                <div class="card-header bg-transparent border-bottom">
-                                    <div class="d-flex flex-wrap align-items-start">
-                                        <div class="me-2 d-flex">
-                                            <select class="form-control selectpicker" data-live-search="true" title="Select Stock Type " data-style="form-select btn border btn-sm pe-5">
-                                                <option value="" selected>Sales</option>
-                                                <option value="">Distributions</option>   
+                                <div class="card-header bg-white">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <h4 class="card-title mb-0">Burner Sales</h4>
+                                        <div class="">
+                                            <select class="form-select form-select-sm ms-2">
+                                                <option value="2022" selected>All Time</option>
+                                                <option value="">2022</option>
+                                                <option value="2021">2021</option>
+                                                <option value="2020">2020</option>
+                                                <option value="2019">2019</option>
                                             </select>
-                                            <input class="form-control form-control-sm mx-3 select-week d-none" type="week" value="2019-W33" id="example-week-input">
-    
                                         </div>
-                                        <ul class="nav nav-tabs nav-tabs-custom card-header-tabs ms-auto" role="tablist">
-                                            <li class="nav-item nav-yearly" role="presentation">
-                                                <a class="nav-link active nav-yearly" data-bs-toggle="tab" href="#" role="tab" aria-selected="true">
-                                                    Yearly
-                                                </a>
-                                            </li>
-                                            <li class="nav-item nav-weekly" role="presentation">
-                                                <a class="nav-link" data-bs-toggle="tab" href="#" role="tab" aria-selected="false" tabindex="-1">
-                                                    Weekly
-                                                </a>
-                                            </li>
-                                        </ul>
                                     </div>
+                                </div>
+                                <div class="card-body">
                                     
-                                </div>
-                                
-                                <div class="card-header d-none">
-                                    <h4 class="card-title">Sales Perfomance</h4>
-                                </div>
-                                <div class="card-body">
-                                    <div class="vales-options-cont">
-                                        <!-- <div id="annual-sales" class="apex-charts" dir="ltr"></div> -->
-                                        <div id="annual-sales" class="" dir="ltr"></div>
-                                        <div id="weekly-sales" class="d-none" dir="ltr"></div>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-                        <div class="col-xl-6 d-none">
-                            <div class="card">
-                                <div class="card-body">
-                                    <div class="float-end">
-                                        <select class="form-select form-select-sm ms-2">
-                                            <option value="2022" selected>2022</option>
-                                            <option value="2021">2021</option>
-                                            <option value="2020">2020</option>
-                                            <option value="2019">2019</option>
-                                        </select>
-                                    </div>
-                                    <h4 class="card-title mb-0">Communication Usage</h4>
-                                    <p class="mb-3">Summary of messages sent the last year</p>
 
                                     <div class="row">
 
-                                        <div class="col-sm-8">
+                                        <div class="col-sm-12">
                                             <div>
-                                                <div id="sent-bundles" class="apex-charts"></div>
+                                                <div id="Map-data" class=""></div>
                                             </div>
                                         </div>
 
-                                        <div class="col-sm-4 align-self-center">
-                                            <div>
-                                                <p class="mb-2"><i class="mdi mdi-circle align-middle font-size-10 me-2 text-primary"></i> SMSs</p>
-                                                <h5>22,562 | <span class="text-muted font-size-14">23 Contacts</span></h5>
-                                            </div>
+                                        <div class="col-12 d-none">
+                                            <div id="projections">
 
-                                            <div class="mt-4 pt-2">
-                                                <p class="mb-2"><i class="mdi mdi-circle align-middle font-size-10 me-2 text-pink"></i> Emails</p>
-                                                <h5>632,230 | <span class="text-muted font-size-14">75 Contacts</span></h5>
-                                            </div>
-
-                                            <div class="mt-4 pt-2">
-                                                <p class="mb-2"><i class="mdi mdi-circle align-middle font-size-10 me-2 text-whatsApp"></i> WhatsApp Texts</p>
-                                                <h5>35,659 | <span class="text-muted font-size-14">203 Contacts</span></h5>
-                                            </div>
-                                            <div class="mt-4">
-                                                <a href="javascript: void(0);" class="btn btn-primary btn-sm">Top Up <i class="mdi mdi-arrow-right ms-1"></i></a>
                                             </div>
                                         </div>
+
                                     </div>
                                 </div>
                             </div>
                         </div>
 
+                        <div class="col-xl-6 col-md-7 px-sm-30px">
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="card">
+                                        <div class="card-header bg-transparent border-bottom">
+                                            <div class="d-flex flex-wrap align-items-start">
+                                                <div class="me-2 d-flex">
+                                                    <select class="form-control selectpicker" data-live-search="true" title="Select Stock Type " data-style="form-select btn border btn-sm pe-5">
+                                                        <option value="" selected>Sales</option>
+                                                        <option value="">Distributions</option>   
+                                                    </select>
+                                                    <input class="form-control form-control-sm mx-3 select-week d-none" type="week" value="2019-W33" id="example-week-input">
+            
+                                                </div>
+                                                <ul class="nav nav-tabs nav-tabs-custom card-header-tabs ms-auto" role="tablist">
+                                                    <li class="nav-item nav-yearly" role="presentation">
+                                                        <a class="nav-link active nav-yearly" data-bs-toggle="tab" href="#" role="tab" aria-selected="true">
+                                                            Yearly
+                                                        </a>
+                                                    </li>
+                                                    <li class="nav-item nav-weekly" role="presentation">
+                                                        <a class="nav-link" data-bs-toggle="tab" href="#" role="tab" aria-selected="false" tabindex="-1">
+                                                            Weekly
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            
+                                        </div>
+                                        
+                                        <div class="card-header d-none">
+                                            <h4 class="card-title">Sales Perfomance</h4>
+                                        </div>
+                                        <div class="card-body">
+                                            <div class="vales-options-cont">
+                                                <!-- <div id="annual-sales" class="apex-charts" dir="ltr"></div> -->
+                                                <div id="annual-sales" class="" dir="ltr"></div>
+                                                <div id="weekly-sales" class="d-none" dir="ltr"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="card">
+                                        <div class="card-header d-flex align-items-center justify-content-between">
+                                            <div class="d-none">
+                                                <h4 class="card-title mb-0">Weekly Products Perfomance</h4>
+                                            </div>
+                                            <div class="d-flex">
+                                                <select class="form-control selectpicker mx-2 " data-live-search="true" title="Products" data-style="form-control form-select btn-sm btn border pe-5">
+                                                    <option value="" selected>Ethanol Sales</option>
+                                                    <option value="">All Burners</option> 
+                                                    <option value="">Double Burner</option>   
+                                                    <option value="">Single Burners</option>    
+                                                </select>
+        
+                                                <select class="form-control selectpicker form-select  mx-2 " data-live-search="true" title="Select Cashiers" data-style="form-select btn border btn-sm pe-5">
+                                                    <option value="">All Counties</option>
+                                                    <option value="">Meru County</option>   
+                                                    <option value="">Kirinyaga County</option>    
+                                                    <option value="">Embu County</option>                                                               
+                                                </select>
+                                                <input class="form-control form-control-sm" type="week" value="2019-W33" id="example-week-input">
+                                            </div>
+                                        </div>
+                                        <div class="card-body">
+                                            <div id="heatMap"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     <!-- end row -->
 
@@ -782,14 +777,23 @@
    <script src="assets/js/pages/earlyBirdDashboard.js "></script>
 
    <!-- highchart js files -->
-   <script src="https://code.highcharts.com/highcharts.js"></script>
    <script src="https://code.highcharts.com/modules/heatmap.js"></script>
    <script src="https://code.highcharts.com/modules/exporting.js"></script>
    <script src="https://code.highcharts.com/modules/export-data.js"></script>
    <script src="https://code.highcharts.com/modules/accessibility.js"></script>
 
+   <!-- highchart map modules -->
+<script src="https://code.highcharts.com/highcharts-more.js"></script>
+   <script src="https://code.highcharts.com/maps/highmaps.js"></script>
+    <script src="https://code.highcharts.com/maps/modules/exporting.js"></script>
+    <script src="https://code.highcharts.com/maps/modules/offline-exporting.js"></script>
+    
+   
+
    <script src="assets/js/pages/annual-sales-perfomance.js "></script>
    <script src="assets/js/pages/weekly-sales-perfomance.js "></script>
+   <script src="assets/js/dataMap.js "></script>
+   <script src="assets/js/projectionsGauge.js"></script>
 
 
 
