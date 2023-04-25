@@ -1288,5 +1288,8 @@ tr.active{
     width: auto;
     overflow: hidden;
 }
+.perfomance-card{
+    height: calc(100% - 23px);
+}
 
 

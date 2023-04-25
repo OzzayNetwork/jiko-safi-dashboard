@@ -602,40 +602,62 @@
 
                     <div class="row d-non">
                         <div class="col-sm-12 col-xl-6 col-md-5 px-sm-30px">
-                            <div class="card">
-                                <div class="card-header bg-white">
-                                    <div class="d-flex justify-content-between align-items-center">
-                                        <h4 class="card-title mb-0">Burner Sales</h4>
-                                        <div class="">
-                                            <select class="form-select form-select-sm ms-2">
-                                                <option value="2022" selected>All Time</option>
-                                                <option value="">2022</option>
-                                                <option value="2021">2021</option>
-                                                <option value="2020">2020</option>
-                                                <option value="2019">2019</option>
-                                            </select>
+                            <div class="row h-100">
+                                <div class="col-12">
+                                    <div class="card perfomance-card">
+                                        <div class="card-header bg-white">
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <h4 class="card-title mb-0">Burner Sales</h4>
+                                                <div class="d-flex mx-3">
+                                                    <select class="form-select form-select-sm ms-2">
+                                                        <option value="2022" selected>All Burners</option>
+                                                        <option value="">Double Burners</option>
+                                                        <option value="">Single Burners</option>
+                                                        <option value="">Ethanol</option>
+                                                    </select>
+        
+                                                    <select class="form-select form-select-sm ms-2">
+                                                        <option value="2022" selected>Sales</option>
+                                                        <option value="">Stock</option>
+                                                    </select>
+        
+                                                    <select class="form-select form-select-sm ms-2">
+                                                        <option value="2022" selected>All Time</option>
+                                                        <option value="">2022</option>
+                                                        <option value="2021">2021</option>
+                                                        <option value="2020">2020</option>
+                                                        <option value="2019">2019</option>
+                                                    </select>
+                                                </div>
+                                            </div>
                                         </div>
-                                    </div>
-                                </div>
-                                <div class="card-body">
-                                    
-
-                                    <div class="row">
-
-                                        <div class="col-sm-12">
-                                            <div>
-                                                <div id="Map-data" class=""></div>
+                                        <div class="card-body">
+                                            
+        
+                                            <div class="row">
+        
+                                                <div class="col-sm-12">
+                                                    <div>
+                                                        <div id="Map-data" class=""></div>
+                                                    </div>
+                                                </div>
+        
+                                               
+        
                                             </div>
                                         </div>
 
-                                        <div class="col-12 d-none">
-                                            <div id="projections">
-
+                                        <div class="card-footer bg-white border-top">
+                                            <div class="col-12 ">
+                                                <div id="projections">
+    
+                                                </div>
                                             </div>
                                         </div>
-
                                     </div>
                                 </div>
+
+                                
                             </div>
                         </div>
 
@@ -783,8 +805,9 @@
    <script src="https://code.highcharts.com/modules/accessibility.js"></script>
 
    <!-- highchart map modules -->
-<script src="https://code.highcharts.com/highcharts-more.js"></script>
-   <script src="https://code.highcharts.com/maps/highmaps.js"></script>
+   <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.highcharts.com/highcharts-more.js"></script>
+    <script src="http://code.highcharts.com/maps/modules/map.js"></script>
     <script src="https://code.highcharts.com/maps/modules/exporting.js"></script>
     <script src="https://code.highcharts.com/maps/modules/offline-exporting.js"></script>
     

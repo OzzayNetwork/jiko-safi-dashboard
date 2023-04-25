@@ -2,6 +2,7 @@
 Highcharts.mapChart('Map-data', {
     series: [
         {
+        		name:"Burner Sales",
             animation: {
                 duration: 1000
             },
@@ -271,7 +272,8 @@ Highcharts.mapChart('Map-data', {
                 },
                 {
                     "id": "County_1",
-                    "y": 1
+                    "y": 1,
+                    value: 798903
                 },
                 {
                     "id": "County_9",
@@ -306,24 +308,34 @@ Highcharts.mapChart('Map-data', {
                     "y": 9
                 },
                 {
+                    //Meru
                     "id": "County_12",
-                    "y": 10
+                    "y": 10,
+                    value:334234
                 },
                 {
+                    //Tharaka Nithi
                     "id": "County_13",
-                    "y": 11
+                    "y": 11,
+                    value:123456
                 },
                 {
+                    //Embu
                     "id": "County_14",
-                    "y": 12
+                    "y": 12,
+                    value:534234
                 },
                 {
+                    //Machakos county
                     "id": "County_16",
-                    "y": 13
+                    "y": 13,
+                    value:345678
                 },
                 {
+                    //makueni county
                     "id": "County_17",
-                    "y": 14
+                    "y": 14,
+                    value:45348
                 },
                 {
                     "id": "County_47",
@@ -464,6 +476,7 @@ Highcharts.mapChart('Map-data', {
                     value: 321165
                 },
                 {
+                    //Kitui county
                     "id": "County_15",
                     "y": 46,
                     value: 300000
@@ -526,6 +539,8 @@ Highcharts.mapChart('Map-data', {
         //     [1, '#00592c']
         // ] 
     },
+    
+    
 
 
 
