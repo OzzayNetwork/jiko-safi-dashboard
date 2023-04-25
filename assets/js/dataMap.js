@@ -277,35 +277,43 @@ Highcharts.mapChart('Map-data', {
                 },
                 {
                     "id": "County_9",
-                    "y": 2
+                    "y": 2,
+                    value:0
                 },
                 {
                     "id": "County_8",
-                    "y": 3
+                    "y": 3,
+                    value:0
                 },
                 {
                     "id": "County_7",
-                    "y": 4
+                    "y": 4,
+                    value:0
                 },
                 {
                     "id": "County_4",
-                    "y": 5
+                    "y": 5,
+                    value:0
                 },
                 {
                     "id": "County_3",
-                    "y": 6
+                    "y": 6,
+                    value:0
                 },
                 {
                     "id": "County_2",
-                    "y": 7
+                    "y": 7,
+                    value:0
                 },
                 {
                     "id": "County_6",
-                    "y": 8
+                    "y": 8,
+                    value:0
                 },
                 {
                     "id": "County_11",
-                    "y": 9
+                    "y": 9,
+                    value:0
                 },
                 {
                     //Meru
@@ -339,75 +347,93 @@ Highcharts.mapChart('Map-data', {
                 },
                 {
                     "id": "County_47",
-                    "y": 15
+                    "y": 15,
+                    value:0
                 },
                 {
                     "id": "County_22",
-                    "y": 16
+                    "y": 16,
+                    value:0
                 },
                 {
                     "id": "County_21",
-                    "y": 17
+                    "y": 17,
+                    value:0
                 },
                 {
                     "id": "County_20",
-                    "y": 18
+                    "y": 18,
+                    value:0
                 },
                 {
                     "id": "County_19",
-                    "y": 19
+                    "y": 19,
+                    value:0
                 },
                 {
                     "id": "County_18",
-                    "y": 20
+                    "y": 20,
+                    value:0
                 },
                 {
                     "id": "County_31",
-                    "y": 21
+                    "y": 21,
+                    value:0
                 },
                 {
                     "id": "County_25",
-                    "y": 22
+                    "y": 22,
+                    value:0
                 },
                 {
                     "id": "County_23",
-                    "y": 23
+                    "y": 23,
+                    value:0
                 },
                 {
                     "id": "County_24",
-                    "y": 24
+                    "y": 24,
+                    value:0
                 },
                 {
                     "id": "County_30",
-                    "y": 25
+                    "y": 25,
+                    value:0
                 },
                 {
                     "id": "County_29",
-                    "y": 26
+                    "y": 26,
+                    value:0
                 },
                 {
                     "id": "County_28",
-                    "y": 27
+                    "y": 27,
+                    value:0
                 },
                 {
                     "id": "County_27",
-                    "y": 28
+                    "y": 28,
+                    value:0
                 },
                 {
                     "id": "County_26",
-                    "y": 29
+                    "y": 29,
+                    value:0
                 },
                 {
                     "id": "County_35",
-                    "y": 30
+                    "y": 30,
+                    value:0
                 },
                 {
                     "id": "County_36",
-                    "y": 31
+                    "y": 31,
+                    value:0
                 },
                 {
                     "id": "County_32",
-                    "y": 32
+                    "y": 32,
+                    value:0
                 },
                 {
                     "id": "County_46",
@@ -522,7 +548,7 @@ Highcharts.mapChart('Map-data', {
         maxColor: Highcharts.getOptions().colors[0],
         visible: true,
         stops: [
-            [0, '#e7f5ec'],
+            [0, '#ebedf0'],
             [0.2, '#c6e6d0'],
             [0.4, '#7dc794'],
             [0.6, '#46af68'],
