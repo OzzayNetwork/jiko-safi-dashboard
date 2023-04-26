@@ -50,6 +50,14 @@ function initMap() {
         anchor: new google.maps.Point(0, 0) // anchor
     };
 
+    //distributor icons
+    var distributorIcon = {
+        url: "assets/images/map-assets/distributor.svg", // url
+        scaledSize: new google.maps.Size(50, 50), // scaled size
+        origin: new google.maps.Point(0, 0), // origin
+        anchor: new google.maps.Point(0, 0) // anchor
+    };
+
 
 
     //off street parking
@@ -342,313 +350,318 @@ function initMap() {
 
 
 
-    //taxi on transit
+    //Distributor
     addMarker({
         coords: { lat: -1.284319, lng: 36.8238173 },
-        iconImage: taxi_transit,
-        content: `<p class="d-none">approved|identifier</p><h6 class="d-flex align-items-center">
+        iconImage: distributorIcon,
+        content: `<p class="d-none">application|identifier</p><h6 class="d-flex align-items-center">
         <div class="card mb-0">
-        <div class="card-body p-0 mb-2">
-               <div class="d-flex">
-             
-               <div class="d-none flex-shrink-0 align-self-center me-3">
-                   <img src="assets/images/users/avatar-6.jpg" class="rounded-circle avatar-xs" alt="">
-               </div>
-               
-               <div class="flex-grow-1 overflow-hidden pe-5">
-                   <h5 class="text-truncate font-size-14 mb-1 text-capitalize">
-                   14 Seater (Mololine Sacco)
-                    <div class="rating-star">
-                            <input type="hidden" class="rating" data-filled="mdi mdi-star text-warning" data-empty="mdi mdi-star-outline text-muted" data-readonly value="3.5" />
-                        </div>
-                   </h5>
-                   <p class="text-truncate mb-0 text-uppercase">KAB 123P</p>
-               </div>
+            <div class="card-body p-0 mb-2">
+                   <div class="d-flex">
+                 
+                    <div class="flex-shrink-0 align-self-center me-3 d-none">
+                        <img src="assets/images/users/avatar-4.jpg" class="rounded-circle avatar-xs" alt="">
+                    </div>
+                    
+                    <div class="flex-grow-1 overflow-hidden pe-5">
+                        <h5 class="text-truncate font-size-14 mb-1 text-capitalize">
+                            The Evolution Shop
+                        </h5>
+                    </div>
+                   </div>
+            </div>
 
-               <div class="font-size-11 text-right">
-                    <p class="text-muted mb-2 text-uppercase"><i class="mdi mdi-circle text-warning align-middle me-1"></i> Inactivated</p>
-                    <p class="text-muted mb-0"><i class="mdi mdi-clock text-muted align-middle me-1"></i> Last Seen 36 Min</p>
-               </div>
-               </div>
-        </div>
-
-        <div class="card-body bg-light p-1 mt-2>
-                           
-            <p class="text-muted mb-0 d-flex flex-row">
-                <i class="mdi mdi-map-marker text-warning align-middle me-1 font-18px"></i>
+            
+            <div class="card-body bg-light d-flex p-3 mb-3">  
+                <p class="mb-0">  
+                    <i class="mdi mdi-map-marker text-info align-middle me-1 font-18px"></i>             
+                </p>
                 <div>
-                    <p class="text-muted mb-0">Last recorded location</p>
-                    <span class="the-clicked-address">Unknown Location</span> 
+                    <p class="text-muted mb-0">Distributor's Location</p>                         
+                    <p class="mb-0"><span class="the-clicked-address"></span> Nairobi hospital, Ngong Road, Nairobi, Kenya</p>
                 </div>
-            </p>
-        </div>
+            </div>
 
-        <div class="card-body">
-            <ul class="verti-timeline list-unstyled">        
-                <li class="event-list">
-                    <div class="event-timeline-dot">
-                        <i class="mdi mdi-calendar-clock font-size-18 text-black"></i>
-                    </div>
-                    <div class="d-flex">
-                        
-                        <div class="flex-grow-1">
-                        <span class="text-muted">
-                         Last Updated
-                        </span>
-                            <div>
-                                10:09 PM
-                            </div>
-                        </div>
-                    </div>
-                </li>
-                <li class="event-list">
-                    <div class="event-timeline-dot">
-                        <i class="mdi mdi-timer-sand font-size-18 text-primary"></i>
-                    </div>
-                    <div class="d-flex">
-                       
-                        <div class="flex-grow-1">
-                        <span class="text-muted">
-                        Time and Speed since inactivation
-                        </span>
-                            <div>
-                                23 Hours At a speed of 67 KPH
-                            </div>
-                        </div>
-                    </div>
-                </li>
-            </ul>
+            <div class="card-body bg-success bg-soft d-flex p-3 mb-3">  
+                <p class="mb-0">  
+                    <i class="mdi mdi-water text-success align-middle me-1 font-18px"></i>             
+                </p>
+                <div>
+                    <p class="text-muted mb-0">Ethanol Stock Level</p>                         
+                    <p class="mb-0"><span class=""></span> 25,000 Literes </p>
+                </div>
+            </div>
+
+            <div class="card-body bg-info bg-soft d-flex p-3 mb-3">  
+                <p class="mb-0">  
+                    <i class="mdi mdi-fire text-danger align-middle me-1 font-18px"></i>             
+                </p>
+                <div>
+                    <p class="text-muted mb-0">Double Burner Stock Level</p>                         
+                    <p class="mb-0"><span class=""></span> 345 Units </p>
+                </div>
+            </div>
+
+            <div class="card-body bg-warning bg-soft d-flex p-3 mb-3">  
+                <p class="mb-0">  
+                    <i class="mdi mdi-fire text-danger align-middle me-1 font-18px"></i>             
+                </p>
+                <div>
+                    <p class="text-muted mb-0">Single Burner Stock Level</p>                         
+                    <p class="mb-0"><span class=""></span> 98 Units </p>
+                </div>
+            </div>
+
+            <div class="card-body bg-dark bg-soft d-flex p-3 mb-3">  
+                <p class="mb-0">  
+                    <i class="mdi mdi-account-group text-black align-middle me-1 font-18px"></i>             
+                </p>
+                <div>
+                    <p class="text-muted mb-0 text-black">Clients Served</p>                         
+                    <p class="mb-0"><span class=""></span> 86 Clients </p>
+                </div>
+            </div>
+
+           
         </div>
-    </div>
-       
-        `
+           
+            `
     });
 
 
-    //taxi on transit
+    //Distributor
     addMarker({
         coords: { lat: -1.29899, lng: 36.9187 },
-        iconImage: taxi_transit,
-        content: `<p class="d-none">approved|identifier</p><h6 class="d-flex align-items-center">
+        iconImage: distributorIcon,
+        content: `<p class="d-none">application|identifier</p><h6 class="d-flex align-items-center">
         <div class="card mb-0">
-        <div class="card-body p-0 mb-2">
-               <div class="d-flex">
-             
-               <div class="d-none flex-shrink-0 align-self-center me-3">
-                   <img src="assets/images/users/avatar-6.jpg" class="rounded-circle avatar-xs" alt="">
-               </div>
-               
-               <div class="flex-grow-1 overflow-hidden pe-5">
-                   <h5 class="text-truncate font-size-14 mb-1 text-capitalize">
-                   14 Seater (Super Metro Sacco)
-                    <div class="rating-star">
-                            <input type="hidden" class="rating" data-filled="mdi mdi-star text-warning" data-empty="mdi mdi-star-outline text-muted" data-readonly value="3.5" />
-                        </div>
-                   </h5>
-                   <p class="text-truncate mb-0 text-uppercase">KAB 123P</p>
-               </div>
+            <div class="card-body p-0 mb-2">
+                   <div class="d-flex">
+                 
+                    <div class="flex-shrink-0 align-self-center me-3 d-none">
+                        <img src="assets/images/users/avatar-4.jpg" class="rounded-circle avatar-xs" alt="">
+                    </div>
+                    
+                    <div class="flex-grow-1 overflow-hidden pe-5">
+                        <h5 class="text-truncate font-size-14 mb-1 text-capitalize">
+                            The Rods Family Shop
+                        </h5>
+                    </div>
+                   </div>
+            </div>
 
-               <div class="font-size-11 text-right">
-               <p class="text-muted mb-2 text-uppercase"><i class="mdi mdi-circle text-warning align-middle me-1"></i> Inactivated</p>
-               <p class="text-muted mb-0"><i class="mdi mdi-clock text-muted align-middle me-1"></i> Last Seen 36 Min</p>
-               </div>
-               </div>
-        </div>
+            
+            <div class="card-body bg-light d-flex p-3 mb-3">  
+                <p class="mb-0">  
+                    <i class="mdi mdi-map-marker text-info align-middle me-1 font-18px"></i>             
+                </p>
+                <div>
+                    <p class="text-muted mb-0">Distributor's Location</p>                         
+                    <p class="mb-0"><span class="the-clicked-address"></span> Nairobi hospital, Ngong Road, Nairobi, Kenya</p>
+                </div>
+            </div>
 
-        <div class="card-body bg-light p-1>                
-            <p class="text-muted mb-0"><i class="mdi mdi-map-marker text-warning align-middle me-1 font-18px"></i><span class="the-clicked-address">Unknown Location</span> </p>
-        </div>
+            <div class="card-body bg-success bg-soft d-flex p-3 mb-3">  
+                <p class="mb-0">  
+                    <i class="mdi mdi-water text-success align-middle me-1 font-18px"></i>             
+                </p>
+                <div>
+                    <p class="text-muted mb-0">Ethanol Stock Level</p>                         
+                    <p class="mb-0"><span class=""></span> 45,000 Literes </p>
+                </div>
+            </div>
 
-        <div class="card-body">
-            <ul class="verti-timeline list-unstyled">        
-                <li class="event-list">
-                    <div class="event-timeline-dot">
-                        <i class="mdi mdi-calendar-clock font-size-18 text-black"></i>
-                    </div>
-                    <div class="d-flex">
-                        
-                        <div class="flex-grow-1">
-                        <span class="text-muted">
-                         Last Updated
-                        </span>
-                            <div>
-                          10 Jan 2023 At 10:54 AM
-                            </div>
-                        </div>
-                    </div>
-                </li>
-                <li class="event-list">
-                    <div class="event-timeline-dot">
-                        <i class="mdi mdi-timer-sand font-size-18 text-primary"></i>
-                    </div>
-                    <div class="d-flex">
-                       
-                        <div class="flex-grow-1">
-                        <span class="text-muted">
-                         Time and Speed since inactivation
-                        </span>
-                            <div>
-                           45 Min at a speed of 102 KPH
-                            </div>
-                        </div>
-                    </div>
-                </li>
-            </ul>
+            <div class="card-body bg-info bg-soft d-flex p-3 mb-3">  
+                <p class="mb-0">  
+                    <i class="mdi mdi-fire text-danger align-middle me-1 font-18px"></i>             
+                </p>
+                <div>
+                    <p class="text-muted mb-0">Double Burner Stock Level</p>                         
+                    <p class="mb-0"><span class=""></span> 45 Units </p>
+                </div>
+            </div>
+
+            <div class="card-body bg-warning bg-soft d-flex p-3 mb-3">  
+                <p class="mb-0">  
+                    <i class="mdi mdi-fire text-danger align-middle me-1 font-18px"></i>             
+                </p>
+                <div>
+                    <p class="text-muted mb-0">Single Burner Stock Level</p>                         
+                    <p class="mb-0"><span class=""></span> 908 Units </p>
+                </div>
+            </div>
+
+            <div class="card-body bg-dark bg-soft d-flex p-3 mb-3">  
+                <p class="mb-0">  
+                    <i class="mdi mdi-account-group text-black align-middle me-1 font-18px"></i>             
+                </p>
+                <div>
+                    <p class="text-muted mb-0 text-black">Clients Served</p>                         
+                    <p class="mb-0"><span class=""></span> 71 Clients </p>
+                </div>
+            </div>
+
+           
         </div>
-    </div>
-       
-        `
+           
+            `
     });
 
-    //Taxi ontransit
+    //distributor
     addMarker({
         coords: { lat: -1.27199, lng: 36.8187 },
-        iconImage: taxi_transit,
-        content: `<p class="d-none">approved|identifier</p><h6 class="d-flex align-items-center">
+        iconImage: distributorIcon,
+        content: `<p class="d-none">application|identifier</p><h6 class="d-flex align-items-center">
         <div class="card mb-0">
-        <div class="card-body p-0 mb-2">
-               <div class="d-flex">
-             
-               <div class="d-none flex-shrink-0 align-self-center me-3">
-                   <img src="assets/images/users/avatar-6.jpg" class="rounded-circle avatar-xs" alt="">
-               </div>
-               
-               <div class="flex-grow-1 overflow-hidden pe-5">
-                   <h5 class="text-truncate font-size-14 mb-1 text-capitalize">
-                   Mini Bus (2NK Sacco)
-                    <div class="rating-star">
-                            <input type="hidden" class="rating" data-filled="mdi mdi-star text-warning" data-empty="mdi mdi-star-outline text-muted" data-readonly value="3.5" />
-                        </div>
-                   </h5>
-                   <p class="text-truncate mb-0 text-uppercase">KAB 123P</p>
-               </div>
+            <div class="card-body p-0 mb-2">
+                   <div class="d-flex">
+                 
+                    <div class="flex-shrink-0 align-self-center me-3 d-none">
+                        <img src="assets/images/users/avatar-4.jpg" class="rounded-circle avatar-xs" alt="">
+                    </div>
+                    
+                    <div class="flex-grow-1 overflow-hidden pe-5">
+                        <h5 class="text-truncate font-size-14 mb-1 text-capitalize">
+                            Mystirio Shpping Center
+                        </h5>
+                    </div>
+                   </div>
+            </div>
 
-               <div class="font-size-11 text-right">
-               <p class="text-muted mb-2 text-uppercase"><i class="mdi mdi-circle text-warning align-middle me-1"></i> Inactivated</p>
-               <p class="text-muted mb-0"><i class="mdi mdi-clock text-muted align-middle me-1"></i> Last Seen 36 Min</p>
-               </div>
-               </div>
-        </div>
+            
+            <div class="card-body bg-light d-flex p-3 mb-3">  
+                <p class="mb-0">  
+                    <i class="mdi mdi-map-marker text-info align-middle me-1 font-18px"></i>             
+                </p>
+                <div>
+                    <p class="text-muted mb-0">Distributor's Location</p>                         
+                    <p class="mb-0"><span class="the-clicked-address"></span> Nairobi hospital, Ngong Road, Nairobi, Kenya</p>
+                </div>
+            </div>
 
-        <div class="card-body bg-light p-1>                
-            <p class="text-muted mb-0"><i class="mdi mdi-map-marker text-warning align-middle me-1 font-18px"></i><span class="the-clicked-address">Unknown Location</span> </p>
-        </div>
+            <div class="card-body bg-success bg-soft d-flex p-3 mb-3">  
+                <p class="mb-0">  
+                    <i class="mdi mdi-water text-success align-middle me-1 font-18px"></i>             
+                </p>
+                <div>
+                    <p class="text-muted mb-0">Ethanol Stock Level</p>                         
+                    <p class="mb-0"><span class=""></span> 150,000 Literes </p>
+                </div>
+            </div>
 
-        <div class="card-body">
-            <ul class="verti-timeline list-unstyled">        
-                <li class="event-list">
-                    <div class="event-timeline-dot">
-                        <i class="mdi mdi-calendar-clock font-size-18 text-black"></i>
-                    </div>
-                    <div class="d-flex">
-                        
-                        <div class="flex-grow-1">
-                        <span class="text-muted">
-                         Last Updated
-                        </span>
-                            <div>
-                          10 Jan 2023 At 10:54 AM
-                            </div>
-                        </div>
-                    </div>
-                </li>
-                <li class="event-list">
-                    <div class="event-timeline-dot">
-                        <i class="mdi mdi-timer-sand font-size-18 text-primary"></i>
-                    </div>
-                    <div class="d-flex">
-                       
-                        <div class="flex-grow-1">
-                        <span class="text-muted">
-                         Time and Speed since inactivation
-                        </span>
-                            <div>
-                           45 Min at a speed of 102 KPH
-                            </div>
-                        </div>
-                    </div>
-                </li>
-            </ul>
+            <div class="card-body bg-info bg-soft d-flex p-3 mb-3">  
+                <p class="mb-0">  
+                    <i class="mdi mdi-fire text-danger align-middle me-1 font-18px"></i>             
+                </p>
+                <div>
+                    <p class="text-muted mb-0">Double Burner Stock Level</p>                         
+                    <p class="mb-0"><span class=""></span> 89 Units </p>
+                </div>
+            </div>
+
+            <div class="card-body bg-warning bg-soft d-flex p-3 mb-3">  
+                <p class="mb-0">  
+                    <i class="mdi mdi-fire text-danger align-middle me-1 font-18px"></i>             
+                </p>
+                <div>
+                    <p class="text-muted mb-0">Single Burner Stock Level</p>                         
+                    <p class="mb-0"><span class=""></span> 23 Units </p>
+                </div>
+            </div>
+
+            <div class="card-body bg-dark bg-soft d-flex p-3 mb-3">  
+                <p class="mb-0">  
+                    <i class="mdi mdi-account-group text-black align-middle me-1 font-18px"></i>             
+                </p>
+                <div>
+                    <p class="text-muted mb-0 text-black">Clients Served</p>                         
+                    <p class="mb-0"><span class=""></span> 678 Clients </p>
+                </div>
+            </div>
+
+           
         </div>
-    </div>
-       
-        `
+           
+            `
     });
 
     
-    //Taxi on transit
+    //Distributor
     addMarker({
         coords: { lat: -1.29889, lng: 36.8186003 },
-        iconImage: taxi_transit,
-        content: `<p class="d-none">approved|identifier</p><h6 class="d-flex align-items-center">
+        iconImage: distributorIcon,
+        content: `<p class="d-none">application|identifier</p><h6 class="d-flex align-items-center">
         <div class="card mb-0">
-        <div class="card-body p-0 mb-2">
-               <div class="d-flex">
-             
-               <div class="d-none flex-shrink-0 align-self-center me-3">
-                   <img src="assets/images/users/avatar-6.jpg" class="rounded-circle avatar-xs" alt="">
-               </div>
-               
-               <div class="flex-grow-1 overflow-hidden pe-5">
-                   <h5 class="text-truncate font-size-14 mb-1 text-capitalize">
-                   14 Seater (Mololine Sacco)
-                    <div class="rating-star">
-                            <input type="hidden" class="rating" data-filled="mdi mdi-star text-warning" data-empty="mdi mdi-star-outline text-muted" data-readonly value="3.5" />
-                        </div>
-                   </h5>
-                   <p class="text-truncate mb-0 text-uppercase">KAB 123P</p>
-               </div>
+            <div class="card-body p-0 mb-2">
+                   <div class="d-flex">
+                 
+                    <div class="flex-shrink-0 align-self-center me-3 d-none">
+                        <img src="assets/images/users/avatar-4.jpg" class="rounded-circle avatar-xs" alt="">
+                    </div>
+                    
+                    <div class="flex-grow-1 overflow-hidden pe-5">
+                        <h5 class="text-truncate font-size-14 mb-1 text-capitalize">
+                            Jiko Safi Center
+                        </h5>
+                    </div>
+                   </div>
+            </div>
 
-               <div class="font-size-11 text-right">
-               <p class="text-muted mb-2 text-uppercase"><i class="mdi mdi-circle text-warning align-middle me-1"></i> Inactivated</p>
-               <p class="text-muted mb-0"><i class="mdi mdi-clock text-muted align-middle me-1"></i> Last Seen 36 Min</p>
-               </div>
-               </div>
-        </div>
+            
+            <div class="card-body bg-light d-flex p-3 mb-3">  
+                <p class="mb-0">  
+                    <i class="mdi mdi-map-marker text-info align-middle me-1 font-18px"></i>             
+                </p>
+                <div>
+                    <p class="text-muted mb-0">Distributor's Location</p>                         
+                    <p class="mb-0"><span class="the-clicked-address"></span> Nairobi hospital, Ngong Road, Nairobi, Kenya</p>
+                </div>
+            </div>
 
-        <div class="card-body bg-light p-1>                
-            <p class="text-muted mb-0"><i class="mdi mdi-map-marker text-warning align-middle me-1 font-18px"></i><span class="the-clicked-address">Unknown Location</span> </p>
-        </div>
+            <div class="card-body bg-success bg-soft d-flex p-3 mb-3">  
+                <p class="mb-0">  
+                    <i class="mdi mdi-water text-success align-middle me-1 font-18px"></i>             
+                </p>
+                <div>
+                    <p class="text-muted mb-0">Ethanol Stock Level</p>                         
+                    <p class="mb-0"><span class=""></span> 10,000 Literes </p>
+                </div>
+            </div>
 
-        <div class="card-body">
-            <ul class="verti-timeline list-unstyled">        
-                <li class="event-list">
-                    <div class="event-timeline-dot">
-                        <i class="mdi mdi-calendar-clock font-size-18 text-black"></i>
-                    </div>
-                    <div class="d-flex">
-                        
-                        <div class="flex-grow-1">
-                        <span class="text-muted">
-                         Last Updated
-                        </span>
-                            <div>
-                          10 Jan 2023 At 10:54 AM
-                            </div>
-                        </div>
-                    </div>
-                </li>
-                <li class="event-list">
-                    <div class="event-timeline-dot">
-                        <i class="mdi mdi-timer-sand font-size-18 text-primary"></i>
-                    </div>
-                    <div class="d-flex">
-                       
-                        <div class="flex-grow-1">
-                        <span class="text-muted">
-                         Time and Speed since inactivation
-                        </span>
-                            <div>
-                           45 Min at a speed of 102 KPH
-                            </div>
-                        </div>
-                    </div>
-                </li>
-            </ul>
+            <div class="card-body bg-info bg-soft d-flex p-3 mb-3">  
+                <p class="mb-0">  
+                    <i class="mdi mdi-fire text-danger align-middle me-1 font-18px"></i>             
+                </p>
+                <div>
+                    <p class="text-muted mb-0">Double Burner Stock Level</p>                         
+                    <p class="mb-0"><span class=""></span> 67 Units </p>
+                </div>
+            </div>
+
+            <div class="card-body bg-warning bg-soft d-flex p-3 mb-3">  
+                <p class="mb-0">  
+                    <i class="mdi mdi-fire text-danger align-middle me-1 font-18px"></i>             
+                </p>
+                <div>
+                    <p class="text-muted mb-0">Single Burner Stock Level</p>                         
+                    <p class="mb-0"><span class=""></span> 78 Units </p>
+                </div>
+            </div>
+
+            <div class="card-body bg-dark bg-soft d-flex p-3 mb-3">  
+                <p class="mb-0">  
+                    <i class="mdi mdi-account-group text-black align-middle me-1 font-18px"></i>             
+                </p>
+                <div>
+                    <p class="text-muted mb-0 text-black">Clients Served</p>                         
+                    <p class="mb-0"><span class=""></span> 1,234 Clients </p>
+                </div>
+            </div>
+
+           
         </div>
-    </div>
-       
-        `
+           
+            `
     });
 
     // inactive agent
@@ -681,119 +694,153 @@ function initMap() {
              </p> `
     });
 
-    //Taxi incident
+    //Distributor
     addMarker({
         coords: { lat: -1.2974586, lng: 36.8087993 },
-        iconImage: taxi_incident,
+        iconImage: distributorIcon,
         content: `<p class="d-none">application|identifier</p><h6 class="d-flex align-items-center">
         <div class="card mb-0">
             <div class="card-body p-0 mb-2">
                    <div class="d-flex">
                  
-                   <div class="flex-shrink-0 align-self-center me-3 d-none">
-                       <img src="assets/images/users/avatar-5.jpg" class="rounded-circle avatar-xs" alt="">
-                   </div>
-                   
-                   <div class="flex-grow-1 overflow-hidden pe-5">
-                       <h5 class="text-truncate font-size-14 mb-1 text-capitalize">
-                       14 Seater (Super Metro Sacco)
-                        <div class="rating-star">
-                                <input type="hidden" class="rating" data-filled="mdi mdi-star text-warning" data-empty="mdi mdi-star-outline text-muted" data-readonly value="3.5" />
-                            </div>
-                       </h5>
-                       <p class="text-truncate mb-0 text-uppercase">KAB 123P</p>
-                   </div>
-
-                   <div class="font-size-11 text-right">
-                        <p class="text-muted mb-2 text-uppercase"><i class="mdi mdi-circle text-danger align-middle me-1"></i> In Violation</p>
-                        <p class="text-muted mb-0"><i class="mdi mdi-clock text-muted align-middle me-1"></i> Last Updated at 12:23 AM</p>
-                   </div>
+                    <div class="flex-shrink-0 align-self-center me-3 d-none">
+                        <img src="assets/images/users/avatar-4.jpg" class="rounded-circle avatar-xs" alt="">
+                    </div>
+                    
+                    <div class="flex-grow-1 overflow-hidden pe-5">
+                        <h5 class="text-truncate font-size-14 mb-1 text-capitalize">
+                            The Big Show Gas Station
+                        </h5>
+                    </div>
                    </div>
             </div>
-
-            <div class="card-body bg-light d-flex p-1>  
-                <p class="mb-0">  
-                    <i class="mdi mdi-map-marker text-danger align-middle me-1 font-18px"></i>             
-                </p>
-            <div>
-            <p class="text-muted mb-0">Current Location</p>                         
-            <p class="mb-0">                        
-                <span class="the-clicked-address"></span> Nairobi hospital, Ngong Road, Nairobi, Kenya
-            </p>
-
-               
-           </div>
-            </div>
-
-            <div class="mt-3  alert alert-danger">
-                <p class="m-0 p-0">
-                    <h6 class="text-black">Violation Commited</h6>
-                    <p class="m-0 p-0 text-black">Exceeding speed limit prescribed for class of vehicle by 1-5 KPH</p>
-                </p>
-            </div>
-
-            <div class="alert alert-primary">
-                <p class="m-0 p-0">
-                    <h6>Driving Speed</h6>
-                    <h4 class="m-0 p-0 text-black fw-medium">50 KM/H</h4>
-                </p>
-            </div>
-
-            <div class="alert alert-warning">
-            <p class="m-0 p-0">
-                <h6>Time Elapsed since violation</h6>
-                <h4 class="m-0 p-0 text-black fw-medium">30 minutes</h4>
-            </p>
-        </div>
 
             
+            <div class="card-body bg-light d-flex p-3 mb-3">  
+                <p class="mb-0">  
+                    <i class="mdi mdi-map-marker text-info align-middle me-1 font-18px"></i>             
+                </p>
+                <div>
+                    <p class="text-muted mb-0">Distributor's Location</p>                         
+                    <p class="mb-0"><span class="the-clicked-address"></span> Nairobi hospital, Ngong Road, Nairobi, Kenya</p>
+                </div>
+            </div>
+
+            <div class="card-body bg-success bg-soft d-flex p-3 mb-3">  
+                <p class="mb-0">  
+                    <i class="mdi mdi-water text-success align-middle me-1 font-18px"></i>             
+                </p>
+                <div>
+                    <p class="text-muted mb-0">Ethanol Stock Level</p>                         
+                    <p class="mb-0"><span class=""></span> 312,000 Literes </p>
+                </div>
+            </div>
+
+            <div class="card-body bg-info bg-soft d-flex p-3 mb-3">  
+                <p class="mb-0">  
+                    <i class="mdi mdi-fire text-danger align-middle me-1 font-18px"></i>             
+                </p>
+                <div>
+                    <p class="text-muted mb-0">Double Burner Stock Level</p>                         
+                    <p class="mb-0"><span class=""></span> 90 Units </p>
+                </div>
+            </div>
+
+            <div class="card-body bg-warning bg-soft d-flex p-3 mb-3">  
+                <p class="mb-0">  
+                    <i class="mdi mdi-fire text-danger align-middle me-1 font-18px"></i>             
+                </p>
+                <div>
+                    <p class="text-muted mb-0">Single Burner Stock Level</p>                         
+                    <p class="mb-0"><span class=""></span> 56 Units </p>
+                </div>
+            </div>
+
+            <div class="card-body bg-dark bg-soft d-flex p-3 mb-3">  
+                <p class="mb-0">  
+                    <i class="mdi mdi-account-group text-black align-middle me-1 font-18px"></i>             
+                </p>
+                <div>
+                    <p class="text-muted mb-0 text-black">Clients Served</p>                         
+                    <p class="mb-0"><span class=""></span> 31 Clients </p>
+                </div>
+            </div>
 
            
         </div>
            
             `
     });
-
-    //available taxis
+    //distributors
     addMarker({
         coords: { lat: -1.29948, lng: 36.8151453 },
-        iconImage: taxi_available,
+        iconImage: distributorIcon,
         content: `<p class="d-none">application|identifier</p><h6 class="d-flex align-items-center">
         <div class="card mb-0">
             <div class="card-body p-0 mb-2">
                    <div class="d-flex">
                  
-                   <div class="flex-shrink-0 align-self-center me-3 d-none">
-                       <img src="assets/images/users/avatar-4.jpg" class="rounded-circle avatar-xs" alt="">
-                   </div>
-                   
-                   <div class="flex-grow-1 overflow-hidden pe-5">
-                       <h5 class="text-truncate font-size-14 mb-1 text-capitalize">
-                       14 Seater (3NK Sacco)
-                        <div class="rating-star">
-                                <input type="hidden" class="rating" data-filled="mdi mdi-star text-warning" data-empty="mdi mdi-star-outline text-muted" data-readonly value="3.5" />
-                            </div>
-                       </h5>
-                       <p class="text-truncate mb-0 text-uppercase">KAB 123P</p>
-                   </div>
-
-                   <div class="font-size-11 text-right">
-                        <p class="text-muted mb-2"><i class="mdi mdi-circle text-primary align-middle me-1"></i> Compliant</p>
-                        <p class="text-muted mb-0"><i class="mdi mdi-clock text-muted align-middle me-1"></i> Last Updated at 12:23 AM</p>
-                   </div>
+                    <div class="flex-shrink-0 align-self-center me-3 d-none">
+                        <img src="assets/images/users/avatar-4.jpg" class="rounded-circle avatar-xs" alt="">
+                    </div>
+                    
+                    <div class="flex-grow-1 overflow-hidden pe-5">
+                        <h5 class="text-truncate font-size-14 mb-1 text-capitalize">
+                            The Big Shop
+                        </h5>
+                    </div>
                    </div>
             </div>
 
-            <div class="card-body bg-light d-flex p-1>  
+            
+            <div class="card-body bg-light d-flex p-3 mb-3">  
                 <p class="mb-0">  
                     <i class="mdi mdi-map-marker text-info align-middle me-1 font-18px"></i>             
                 </p>
-            <div>
-            <p class="text-muted mb-0">Current Location</p>                         
-            <p class="mb-0">                
-            <span class="the-clicked-address"></span> Nairobi hospital, Ngong Road, Nairobi, Kenya
-            </p>
-           </div>
+                <div>
+                    <p class="text-muted mb-0">Distributor's Location</p>                         
+                    <p class="mb-0"><span class="the-clicked-address"></span> Nairobi hospital, Ngong Road, Nairobi, Kenya</p>
+                </div>
+            </div>
+
+            <div class="card-body bg-success bg-soft d-flex p-3 mb-3">  
+                <p class="mb-0">  
+                    <i class="mdi mdi-water text-success align-middle me-1 font-18px"></i>             
+                </p>
+                <div>
+                    <p class="text-muted mb-0">Ethanol Stock Level</p>                         
+                    <p class="mb-0"><span class=""></span> 12,000 Literes </p>
+                </div>
+            </div>
+
+            <div class="card-body bg-info bg-soft d-flex p-3 mb-3">  
+                <p class="mb-0">  
+                    <i class="mdi mdi-fire text-danger align-middle me-1 font-18px"></i>             
+                </p>
+                <div>
+                    <p class="text-muted mb-0">Double Burner Stock Level</p>                         
+                    <p class="mb-0"><span class=""></span> 143 Units </p>
+                </div>
+            </div>
+
+            <div class="card-body bg-warning bg-soft d-flex p-3 mb-3">  
+                <p class="mb-0">  
+                    <i class="mdi mdi-fire text-danger align-middle me-1 font-18px"></i>             
+                </p>
+                <div>
+                    <p class="text-muted mb-0">Single Burner Stock Level</p>                         
+                    <p class="mb-0"><span class=""></span> 45 Units </p>
+                </div>
+            </div>
+
+            <div class="card-body bg-dark bg-soft d-flex p-3 mb-3">  
+                <p class="mb-0">  
+                    <i class="mdi mdi-account-group text-black align-middle me-1 font-18px"></i>             
+                </p>
+                <div>
+                    <p class="text-muted mb-0 text-black">Clients Served</p>                         
+                    <p class="mb-0"><span class=""></span> 233 Clients </p>
+                </div>
             </div>
 
            
@@ -804,56 +851,86 @@ function initMap() {
 
     //incidents
 
-    addMarker({
-        coords: { lat: -1.29948, lng: 36.8751453 },
-        iconImage: warning,
-        content: `<p class="d-none">incident|identifiret</p>
-            <img class="mb-3" src="assets/images/incident.jpg" alt=""> 
-            <h6> Head On coalition</h6> 
-            <p class="mb-0 pb-0">Reported By Tonny Jumba</p>
-            <strong class="text-info">20 Min Ago</strong>`
-    });
+    // addMarker({
+    //     coords: { lat: -1.29948, lng: 36.8751453 },
+    //     iconImage: warning,
+    //     content: `<p class="d-none">incident|identifiret</p>
+    //         <img class="mb-3" src="assets/images/incident.jpg" alt=""> 
+    //         <h6> Head On coalition</h6> 
+    //         <p class="mb-0 pb-0">Reported By Tonny Jumba</p>
+    //         <strong class="text-info">20 Min Ago</strong>`
+    // });
 
-    //available Taxis
+    //distributorss
     addMarker({
         coords: { lat: -1.294219, lng: 36.806824 },
-        iconImage: taxi_available,
+        iconImage: distributorIcon,
         content: `<p class="d-none">application|identifier</p><h6 class="d-flex align-items-center">
         <div class="card mb-0">
             <div class="card-body p-0 mb-2">
                    <div class="d-flex">
                  
-                   <div class="flex-shrink-0 align-self-center me-3 d-none">
-                       <img src="assets/images/users/avatar-3.jpg" class="rounded-circle avatar-xs" alt="">
-                   </div>
-                   
-                   <div class="flex-grow-1 overflow-hidden pe-5">
-                       <h5 class="text-truncate font-size-14 mb-1 text-capitalize">
-                       Mini Bus (Embassava Sacco)
-                        <div class="rating-star">
-                                <input type="hidden" class="rating" data-filled="mdi mdi-star text-warning" data-empty="mdi mdi-star-outline text-muted" data-readonly value="3.5" />
-                            </div>
-                       </h5>
-                       <p class="text-truncate mb-0 text-uppercase">KAB 123P</p>
-                   </div>
-
-                   <div class="font-size-11 text-right">
-                        <p class="text-muted mb-2"><i class="mdi mdi-circle text-primary align-middle me-1"></i>Compliant</p>
-                        <p class="text-muted mb-0"><i class="mdi mdi-clock text-muted align-middle me-1"></i> Last Updated at 12:23 AM</p>
-                   </div>
+                    <div class="flex-shrink-0 align-self-center me-3 d-none">
+                        <img src="assets/images/users/avatar-4.jpg" class="rounded-circle avatar-xs" alt="">
+                    </div>
+                    
+                    <div class="flex-grow-1 overflow-hidden pe-5">
+                        <h5 class="text-truncate font-size-14 mb-1 text-capitalize">
+                            The Big Show Gas Station
+                        </h5>
+                    </div>
                    </div>
             </div>
 
-            <div class="card-body bg-light d-flex p-1>  
+            
+            <div class="card-body bg-light d-flex p-3 mb-3">  
                 <p class="mb-0">  
                     <i class="mdi mdi-map-marker text-info align-middle me-1 font-18px"></i>             
                 </p>
-            <div>
-            <p class="text-muted mb-0">Current Location</p>                         
-            <p class="mb-0">                
-            <span class="the-clicked-address"></span> Nairobi hospital, Ngong Road, Nairobi, Kenya
-            </p>
-           </div>
+                <div>
+                    <p class="text-muted mb-0">Distributor's Location</p>                         
+                    <p class="mb-0"><span class="the-clicked-address"></span> Nairobi hospital, Ngong Road, Nairobi, Kenya</p>
+                </div>
+            </div>
+
+            <div class="card-body bg-success bg-soft d-flex p-3 mb-3">  
+                <p class="mb-0">  
+                    <i class="mdi mdi-water text-success align-middle me-1 font-18px"></i>             
+                </p>
+                <div>
+                    <p class="text-muted mb-0">Ethanol Stock Level</p>                         
+                    <p class="mb-0"><span class=""></span> 312,000 Literes </p>
+                </div>
+            </div>
+
+            <div class="card-body bg-info bg-soft d-flex p-3 mb-3">  
+                <p class="mb-0">  
+                    <i class="mdi mdi-fire text-danger align-middle me-1 font-18px"></i>             
+                </p>
+                <div>
+                    <p class="text-muted mb-0">Double Burner Stock Level</p>                         
+                    <p class="mb-0"><span class=""></span> 90 Units </p>
+                </div>
+            </div>
+
+            <div class="card-body bg-warning bg-soft d-flex p-3 mb-3">  
+                <p class="mb-0">  
+                    <i class="mdi mdi-fire text-danger align-middle me-1 font-18px"></i>             
+                </p>
+                <div>
+                    <p class="text-muted mb-0">Single Burner Stock Level</p>                         
+                    <p class="mb-0"><span class=""></span> 56 Units </p>
+                </div>
+            </div>
+
+            <div class="card-body bg-dark bg-soft d-flex p-3 mb-3">  
+                <p class="mb-0">  
+                    <i class="mdi mdi-account-group text-black align-middle me-1 font-18px"></i>             
+                </p>
+                <div>
+                    <p class="text-muted mb-0 text-black">Clients Served</p>                         
+                    <p class="mb-0"><span class=""></span> 31 Clients </p>
+                </div>
             </div>
 
            
@@ -875,46 +952,76 @@ function initMap() {
     //     content: '<p class="d-none">offstreetParking|identifier</p><h6>Bus Park (Offstreet Parking)</h6> <P><strong>KES 3,256,230</strong> already collected</p>'
     // });
 
-    //Taxi offline
+    //Distributor
     addMarker({
         coords: { lat: -1.27576, lng: 36.834851 },
-        iconImage: taxi_offline,
+        iconImage: distributorIcon,
         content: `<p class="d-none">application|identifier</p><h6 class="d-flex align-items-center">
         <div class="card mb-0">
             <div class="card-body p-0 mb-2">
                    <div class="d-flex">
                  
-                   <div class="flex-shrink-0 align-self-center me-3 d-none">
-                       <img src="assets/images/users/avatar-2.jpg" class="rounded-circle avatar-xs" alt="">
-                   </div>
-                   
-                   <div class="flex-grow-1 overflow-hidden pe-5">
-                       <h5 class="text-truncate font-size-14 mb-1 text-capitalize">
-                       Minibus (Super Metro Sacco)
-                        <div class="rating-star">
-                                <input type="hidden" class="rating" data-filled="mdi mdi-star text-warning" data-empty="mdi mdi-star-outline text-muted" data-readonly value="3.5" />
-                            </div>
-                       </h5>
-                       <p class="text-truncate mb-0 text-uppercase">KAB 123P</p>
-                   </div>
-
-                   <div class="font-size-11 text-right">
-                        <p class="text-muted mb-2 text-uppercase"><i class="mdi mdi-circle text-muted align-middle me-1"></i> Inactivated</p>
-                        <p class="text-muted mb-0"><i class="mdi mdi-clock text-muted align-middle me-1"></i> Last Updated at 12:23 AM</p>
-                   </div>
+                    <div class="flex-shrink-0 align-self-center me-3 d-none">
+                        <img src="assets/images/users/avatar-4.jpg" class="rounded-circle avatar-xs" alt="">
+                    </div>
+                    
+                    <div class="flex-grow-1 overflow-hidden pe-5">
+                        <h5 class="text-truncate font-size-14 mb-1 text-capitalize">
+                            Globe Nation
+                        </h5>
+                    </div>
                    </div>
             </div>
 
-            <div class="card-body bg-light d-flex p-1>  
+            
+            <div class="card-body bg-light d-flex p-3 mb-3">  
                 <p class="mb-0">  
-                    <i class="mdi mdi-map-marker text-muted align-middle me-1 font-18px"></i>             
+                    <i class="mdi mdi-map-marker text-info align-middle me-1 font-18px"></i>             
                 </p>
-            <div>
-            <p class="text-muted mb-0">Last recorded location</p>                         
-            <p class="mb-0">                
-            <span class="the-clicked-address"></span> 
-            </p>
-           </div>
+                <div>
+                    <p class="text-muted mb-0">Distributor's Location</p>                         
+                    <p class="mb-0"><span class="the-clicked-address"></span> Nairobi hospital, Ngong Road, Nairobi, Kenya</p>
+                </div>
+            </div>
+
+            <div class="card-body bg-success bg-soft d-flex p-3 mb-3">  
+                <p class="mb-0">  
+                    <i class="mdi mdi-water text-success align-middle me-1 font-18px"></i>             
+                </p>
+                <div>
+                    <p class="text-muted mb-0">Ethanol Stock Level</p>                         
+                    <p class="mb-0"><span class=""></span> 56,000 Literes </p>
+                </div>
+            </div>
+
+            <div class="card-body bg-info bg-soft d-flex p-3 mb-3">  
+                <p class="mb-0">  
+                    <i class="mdi mdi-fire text-danger align-middle me-1 font-18px"></i>             
+                </p>
+                <div>
+                    <p class="text-muted mb-0">Double Burner Stock Level</p>                         
+                    <p class="mb-0"><span class=""></span> 12 Units </p>
+                </div>
+            </div>
+
+            <div class="card-body bg-warning bg-soft d-flex p-3 mb-3">  
+                <p class="mb-0">  
+                    <i class="mdi mdi-fire text-danger align-middle me-1 font-18px"></i>             
+                </p>
+                <div>
+                    <p class="text-muted mb-0">Single Burner Stock Level</p>                         
+                    <p class="mb-0"><span class=""></span> 43 Units </p>
+                </div>
+            </div>
+
+            <div class="card-body bg-dark bg-soft d-flex p-3 mb-3">  
+                <p class="mb-0">  
+                    <i class="mdi mdi-account-group text-black align-middle me-1 font-18px"></i>             
+                </p>
+                <div>
+                    <p class="text-muted mb-0 text-black">Clients Served</p>                         
+                    <p class="mb-0"><span class=""></span> 195 Clients </p>
+                </div>
             </div>
 
            
