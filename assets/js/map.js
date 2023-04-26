@@ -668,7 +668,7 @@ function initMap() {
     addMarker({
         coords: { lat: -1.3220747760956988, lng: 36.84309952630073 },
         iconImage: inactiveAgent,
-        content: '<p class="d-none">agent|plate num</p><h6 class="text-capitalize d-flex align-items-center"><span class="offline-agent mr-2"></span> <span>Alex Wanjala <small><strong>(INACTIVE)</strong></small></span></h6> <p class="pb-0 mb-0">Last Updated at <strong>Tom Mboya Street</strong> at 2:06 PM </strong></p><p>Most recent activity: <strong class="text-black fw-medium">Created a bill for KAT 567Y at 11:41PM</strong><div class="listview text-align-left text-capitalize pl-0">  <div class="listview__header text-align-left text-capitalize text-left"><strong>23MB data (70%)</strong> Consumed in the <strong>last 13 Days</strong></div> <div class="progress"> <div class="progress-bar progress-bar-warning" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div> </div></div></p> '
+        content: '<p class="d-none">agent|plate num</p><h6 class="text-capitalize d-flex align-items-center"><span class="offline-agent mr-2"></span> <span>Alex Wanjala <small><strong>(INACTIVE)</strong></small></span></h6> <p class="pb-0 mb-0">Last Updated at <strong>Tom Mboya Street</strong> at 2:06 PM </strong></p><p>Most recent activity: <strong class="text-black fw-medium">Collected Feedback from a client at 11:41PM</strong><div class="listview text-align-left text-capitalize pl-0">  <div class="listview__header text-align-left text-capitalize text-left"><strong>23MB data (70%)</strong> Consumed in the <strong>last 13 Days</strong></div> <div class="progress"> <div class="progress-bar progress-bar-warning" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div> </div></div></p> '
     });
 
     // active agent
@@ -682,7 +682,7 @@ function initMap() {
             <span>Alex Wanjala <small><strong>(INACTIVE)</strong></small></span>
             </h6>
              <p class="pb-0 mb-0">Last Updated at <strong>Tom Mboya Street</strong> at 2:06 PM </strong></p>
-             <p>Most recent activity: <strong class="text-black fw-medium">Reported an Incident at 12:09 PM 23 May 2023</strong>
+             <p>Most recent activity: <strong class="text-black fw-medium">Collected feedback at 12:09 PM 23 May 2023</strong>
              <div class="listview text-align-left text-capitalize pl-0">  
              <div class="listview__header text-align-left text-capitalize text-left">
              <strong>23MB data (70%)</strong> Consumed in the <strong>last 13 Days</strong>
