@@ -918,7 +918,7 @@ const Mapchart=Highcharts.mapChart('Map-data', {
 
     legend: {
         title: {
-            text: 'ALL TIME SALES PERFOMANCE'
+            text: 'ALL TIME ETHANOL SALES PERFOMANCE'
         },
         
     },
