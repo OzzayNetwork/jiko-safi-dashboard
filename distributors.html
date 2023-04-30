@@ -444,6 +444,10 @@
 
                                                     <a href="distributor-statements.html" class="btn btn btn-info waves-effect waves-light btn-sm"><i class="bx bx-file font-size-16 align-middle me-2"></i>Statements</a>
 
+                                                    <button type="button" data-bs-toggle="modal" data-bs-target=".runrate-detailModal" class="btn btn-dark waves-effect waves-light btn-sm">
+                                                        <i class="bx bx-calendar font-size-16 align-middle me-2"></i> Run Rate
+                                                    </button>
+
                                                     <button type="button" data-bs-toggle="modal" data-bs-target=".update-stock-modal" class="btn btn-secondary waves-effect waves-light btn-sm">
                                                         <i class="bx bx-plus font-size-16 align-middle me-2"></i> Update Stock
                                                     </button>
@@ -494,9 +498,14 @@
 
                                                     <a href="distributor-statements.html" class="btn btn btn-info waves-effect waves-light btn-sm"><i class="bx bx-file font-size-16 align-middle me-2"></i>Statements</a>
 
+                                                    <button type="button" data-bs-toggle="modal" data-bs-target=".runrate-detailModal" class="btn btn-dark waves-effect waves-light btn-sm">
+                                                        <i class="bx bx-calendar font-size-16 align-middle me-2"></i> Run Rate
+                                                    </button>
+
                                                     <button type="button" data-bs-toggle="modal" data-bs-target=".update-stock-modal" class="btn btn-secondary waves-effect waves-light btn-sm">
                                                         <i class="bx bx-plus font-size-16 align-middle me-2"></i> Update Stock
                                                     </button>
+
                                                 </td>
                                             </tr>
 
@@ -543,9 +552,14 @@
 
                                                     <a href="distributor-statements.html" class="btn btn btn-info waves-effect waves-light btn-sm"><i class="bx bx-file font-size-16 align-middle me-2"></i>Statements</a>
 
+                                                    <button type="button" data-bs-toggle="modal" data-bs-target=".runrate-detailModal" class="btn btn-dark waves-effect waves-light btn-sm">
+                                                        <i class="bx bx-calendar font-size-16 align-middle me-2"></i> Run Rate
+                                                    </button>
+
                                                     <button type="button" data-bs-toggle="modal" data-bs-target=".update-stock-modal" class="btn btn-secondary waves-effect waves-light btn-sm">
                                                         <i class="bx bx-plus font-size-16 align-middle me-2"></i> Update Stock
                                                     </button>
+
                                                 </td>
                                             </tr>
 
@@ -590,6 +604,9 @@
 
                                                     <a href="distributor-statements.html" class="btn btn btn-info waves-effect waves-light btn-sm"><i class="bx bx-file font-size-16 align-middle me-2"></i>Statements</a>
 
+                                                    <button type="button" data-bs-toggle="modal" data-bs-target=".runrate-detailModal" class="btn btn-dark waves-effect waves-light btn-sm">
+                                                        <i class="bx bx-calendar font-size-16 align-middle me-2"></i> Run Rate
+                                                    </button>
                                                     <button type="button" data-bs-toggle="modal" data-bs-target=".update-stock-modal" class="btn btn-secondary waves-effect waves-light btn-sm">
                                                         <i class="bx bx-plus font-size-16 align-middle me-2"></i> Update Stock
                                                     </button>
@@ -688,6 +705,58 @@
                 </div>
             </div>
             <!-- end modal -->
+
+            <!-- run rate details -->
+            <div class="modal fade runrate-detailModal" tabindex="-1" role="dialog" aria-labelledby="transaction-detailModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="transaction-detailModalLabel">Run Rate Details</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+
+
+                            <div class="mt-4">
+                                <table class="table">
+                                    <thead>
+                                      <tr>
+                                        <th scope="col">#</th>
+                                        <th scope="col">Item</th>
+                                        <th scope="col">Stock Quantity</th>
+                                        <th scope="col">Run Rate</th>
+                                      </tr>
+                                    </thead>
+                                    <tbody>
+                                      <tr>
+                                        <th scope="row">1</th>
+                                        <td>Ethanol</td>
+                                        <td>4,500 Li</td>
+                                        <td><i class="mdi mdi-music-note-whole  font-28 text-success"></i> 20 Days</td>
+                                      </tr>
+                                      <tr>
+                                        <th scope="row">2</th>
+                                        <td>Double Burner</td>
+                                        <td>123</td>
+                                        <td><i class="mdi mdi-music-note-whole  font-28 text-danger"></i> 5 Days</td>
+                                      </tr>
+                                      <tr>
+                                        <th scope="row">3</th>
+                                        <td>Single Burner</td>
+                                        <td>678</td>
+                                        <td><i class="mdi mdi-music-note-whole  font-28 text-warning"></i> 12 Days</td>
+                                      </tr>
+                                    </tbody>
+                                  </table>
+                            </div>
+                        </div>
+                        <div class="modal-footer d-none">
+                            <a type="button" href="" class="btn btn-primary">Detailed View</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- end of run rate details -->
 
             <!-- update stock modal -->
             <div class="modal fade update-stock-modal" tabindex="-1" role="dialog" aria-labelledby="transaction-detailModalLabel" aria-hidden="true">
